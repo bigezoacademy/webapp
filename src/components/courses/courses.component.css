@@ -1,0 +1,21 @@
+table tr td {
+  border-bottom: 1px solid #000000;
+  padding: 3px;
+}
+table {
+  width: 100%;
+  padding: 3px;
+}
+.course-title {
+  padding: 0;
+}
+td {
+  padding: 0;
+}
+.text-right {
+  text-align: right;
+}
+.bg {
+  background-color: #000000;
+  background-image: url("/images/bg/clean-gray-paper.png");
+}

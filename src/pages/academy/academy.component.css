@@ -1,0 +1,22 @@
+.text-larger {
+  font-size: larger;
+}
+.semi-header {
+  background-color: #141414;
+  color: #ffffff;
+}
+.text-red {
+  color: #ff4f4f;
+}
+.cost {
+  text-align: right;
+  color: #2646af;
+}
+.about-tutor {
+  padding: 10px 20px;
+  color: var(--text-red);
+}
+.tutor {
+  color: #000000;
+  font-size: large;
+}

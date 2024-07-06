@@ -1,0 +1,19 @@
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+.dropdown-menu li {
+  margin: 5px;
+}
+.dropdown-menu li a:hover {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 2px solid #000000;
+  background-color: #e7e7e7;
+}
+
+.dropdown-menu li a:clicked {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 2px solid #000000;
+  background-color: #e7e7e7;
+}

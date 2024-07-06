@@ -1,0 +1,14 @@
+.product {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+.product i {
+  font-size: 50px;
+}
+.product:hover {
+  padding: 33px;
+  width: 100%;
+}

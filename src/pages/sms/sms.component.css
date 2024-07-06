@@ -1,0 +1,60 @@
+.bg {
+  background-color: #000000;
+  background-image: url("/images/bg/clean-gray-paper.png");
+}
+
+#progress-bar {
+  width: 80%;
+  background-color: #ccc;
+  height: 20px;
+  position: relative;
+  margin: 10px auto; /* Center the progress bar */
+}
+
+#draggable-button {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10%;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  margin-left: -10px; /* Center the button on the progress bar */
+}
+
+#result {
+  font-size: 24px;
+}
+
+#whatsappcontainer {
+  text-align: center;
+}
+
+#whatsappprogress-bar {
+  width: 80%;
+  background-color: #ccc;
+  height: 20px;
+  position: relative;
+  margin: 10px auto; /* Center the progress bar */
+}
+
+#whatsappdraggable-button {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(3, 205, 47);
+  border-radius: 10%;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  margin-left: -10px; /* Center the button on the progress bar */
+}
+
+#whatsappresult {
+  font-size: 24px;
+}
+
+table tr td {
+  padding: 10px;
+}

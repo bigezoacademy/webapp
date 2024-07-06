@@ -1,0 +1,35 @@
+<div class="row bg">
+  <div *ngFor="let course of courses" class="col-md-3">
+    <div class="m-3 shadow">
+      <img src="{{ course.Image }}" class="img-fluid" alt="" />
+      <div class="course-text bg-light">
+        <table>
+          <tr>
+            <td><h6 class="fw-bold text-dark text-right">TITLE :</h6></td>
+            <td>
+              <h6 class="fw-bold text-dark">
+                <span class="text-danger">{{ course.Title }}</span>
+              </h6>
+            </td>
+          </tr>
+          <tr>
+            <td><h6 class="fw-bold text-dark text-right">COST :</h6></td>
+            <td>
+              <h6 class="fw-bold text-dark">
+                <span class="text-danger">{{ course.Price }}</span>
+              </h6>
+            </td>
+          </tr>
+        </table>
+        <p class="p-3 text-center">
+          <button
+            class="btn btn-dark ps-5 pe-5 m-1"
+            (click)="viewDetails(course.CourseId)"
+          >
+            See Details
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

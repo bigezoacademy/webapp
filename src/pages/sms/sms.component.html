@@ -1,0 +1,223 @@
+<div class="m-0 p-0">
+  <div class="m-0">
+    <div class="container-fluid bg-black text-center px-4 py-5">
+      <div class="row align-items-center py-5">
+        <div class="container-fluid text-center text-lg-start">
+          <h2 class="display-1 fw-bold lh-1 text-center text-light mb-3">
+            Bulk <span class="text-danger">SMS</span>
+          </h2>
+          <p class="text-center text-light">- connect with your customers -</p>
+          <h5 class="h4 fw-bold lh-1 text-center text-light mb-3">
+            SEND OVER <span class="text-danger">150 SMS </span>/second
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid row bg m-0" id="calculation">
+      <div class="col-md-6 mb-5">
+        <h2 class="display-1 text-left p-3 p-md-5 text-white">
+          Calculate how much you will spend
+          <span class="text-danger">on Airtime</span>
+        </h2>
+      </div>
+      <div class="col-md-6 mb-5">
+        <div class="p-3 shadow bg-light m-lg-3">
+          <div class="feature col">
+            <h1 class="text-black fs-2 mb-3 text-center">
+              <span class="bi bi-chat-dots-fill"></span>
+            </h1>
+            <h3 class="package fw-normal text-primary text-center">
+              SMS CAMPAIGN
+              <span class="text-dark fw-bold">
+                <br />
+                Cost of Airtime</span
+              >
+            </h3>
+            <p class="text-primary">UGX 35/ SMS</p>
+
+            <div id="container">
+              <div id="progress-bar">
+                <div id="draggable-button"></div>
+              </div>
+
+              <table class="table">
+                <tr>
+                  <td class="text-right">Number of SMS</td>
+                  <td>
+                    <span class="h3 fw-bold text-danger" id="numberofsms"
+                      >0</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-right">Total Cost Of SMS</td>
+                  <td>
+                    <span class="h3 fw-bold text-danger" id="totalcostofsms"
+                      >UGX 0</span
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <h2 class="text-center">
+              <a
+                id="smsbutton"
+                class="btn btn-dark py-2 fw-bold"
+                onclick="smscalculator()"
+              >
+                ENTER SPECIFIC VALUE
+              </a>
+            </h2>
+
+            <div id="calculatespecificsms" style="display: none">
+              <form onsubmit="specificsmsresult(event)">
+                <p class="my-1">
+                  <input
+                    type="text"
+                    placeholder="Number of messages"
+                    name="specificsms"
+                    id="specificsms"
+                    class="mx-auto form-control w-75 text-center border-3 border-dark"
+                  />
+                </p>
+                <p class="my-3">
+                  <button
+                    class="btn btn-danger border-0 w-75"
+                    onclick="specificsmsresult(event)"
+                  >
+                    Calculate
+                  </button>
+                </p>
+                <h2 class="">
+                  Total Cost :
+                  <span class="text-danger fw-bold" id="specificsmscost"></span>
+                </h2>
+              </form>
+              <p class="my-1">
+                <a
+                  id="sliderbutton"
+                  class="btn btn-dark w-50 mx-auto py-2 fw-bold"
+                  onclick="smsslider()"
+                  style="display: none"
+                >
+                  USE SLIDER
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script src="js/smscalc.js"></script>
+      </div>
+
+      <div class="col-md-6 mb-5 d-none">
+        <div class="p-3 shadow m-lg-3">
+          <div class="feature col">
+            <h1 class="text-black fs-2 mb-3 text-center">
+              <span class="bi bi-chat-dots-fill"></span>
+            </h1>
+            <h3 class="package fw-bold text-primary text-center">
+              Whatsapp <span class="text-dark">Campaign Cost</span>
+            </h3>
+            <p class="text-primary">UGX 200/ Whatsapp</p>
+
+            <div id="whatsappcontainer">
+              <div id="whatsappprogress-bar">
+                <div id="whatsappdraggable-button"></div>
+              </div>
+              <p>
+                Number of Whatsapp
+                <span class="h3 fw-bold text-danger" id="numberofwhatsapp"
+                  >0</span
+                >
+              </p>
+              <p>
+                Total Cost Of Whatsapp
+                <span class="h3 fw-bold text-danger" id="totalcostofwhatsapp"
+                  >UGX 0</span
+                >
+              </p>
+            </div>
+
+            <h2 class="text-center">
+              <a
+                id="whatsappbutton"
+                class="btn btn-dark py-2 fw-bold"
+                onclick="whatsappcalculator()"
+              >
+                ENTER SPECIFIC VALUE
+              </a>
+            </h2>
+
+            <div id="calculatespecificwhatsapp" style="display: none">
+              <form onsubmit="specificwhatsappresult(event)">
+                <p class="my-1">
+                  <input
+                    type="text"
+                    placeholder="Number of messages"
+                    name="specificwhatsapp"
+                    id="specificwhatsapp"
+                    class="mx-auto form-control w-75 text-center border-3 border-dark"
+                  />
+                </p>
+                <p class="my-3">
+                  <button
+                    class="btn btn-danger border-0 w-75"
+                    onclick="specificwhatsappresult(event)"
+                  >
+                    Calculate
+                  </button>
+                </p>
+                <h2 class="">
+                  Total Cost :
+                  <span
+                    class="text-danger fw-bold"
+                    id="specificwhatsappcost"
+                  ></span>
+                </h2>
+              </form>
+              <p class="my-1">
+                <a
+                  id="sliderbutton"
+                  class="btn btn-dark w-50 mx-auto py-2 fw-bold"
+                  onclick="whatsappslider()"
+                  style="display: none"
+                >
+                  USE SLIDER
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-3 row m-0">
+      <div class="col-md-6 mb-5">
+        <div class="p-3 shadow m-lg-3">
+          <div class="feature col">
+            <h2 class="text-danger text-center fw-bold">Hire Us</h2>
+            <p class="text-center">
+              You can hire our technical team to send Bulk SMS for you or manage
+              your customer data.
+            </p>
+            <h2 class="alert alert-danger fw-bold">
+              UGX 25
+              <span> - Labour fees <i class="text-success">/contact </i> </span>
+            </h2>
+            <ul class="ul unstyled">
+              <li class="fw-bold list-item">WORK INCLUDED</li>
+              <li class="list-item">Sort thousands of contacts</li>
+              <li class="list-item">
+                Send thousands of SMS in just a few minutes
+              </li>
+              <li class="list-item">Continuous Customer Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

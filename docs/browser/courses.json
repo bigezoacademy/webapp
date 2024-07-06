@@ -1,0 +1,55 @@
+{
+    "courses": [
+      {
+        "CourseId": 1,
+        "Title": "Graphic Design",
+        "Description": "Learn the fundamentals of graphic design.",
+        "Price": "USD 70",
+        "PriceUgx": "UGX 250,000",
+        "ClassTime": "4PM-5PM EAT",
+        "Duration": "4 weeks",
+        "Image": "images/graphic.png"
+      },
+      {
+        "CourseId": 2,
+        "Title": "Google Tools",
+        "Description": "Master Google tools for productivity and collaboration.",
+        "Price": "USD 30",
+        "PriceUgx": "UGX 100,000",
+        "ClassTime": "8:00 PM - 9:00 PM EAT",
+        "Duration": "2 weeks",
+        "Image": "images/google.png"
+      },
+      {
+        "CourseId": 3,
+        "Title": "Website Design",
+        "Description": "Create stunning and responsive websites.",
+        "Price": "USD 160",
+        "PriceUgx": "UGX 600,000",
+        "ClassTime": "8AM-9:30AM EAT",
+        "Duration": "2 Months",
+        "Image": "images/website.png"
+      },
+      {
+        "CourseId": 4,
+        "Title": "Advanced Web App",
+        "Description": "Build advanced web applications with modern frameworks.",
+        "Price": "USD 200",
+        "PriceUgx": "UGX 800,000",
+        "ClassTime": "10AM-12NOON EAT",
+        "Duration": "2 Months",
+        "Image": "images/java.png"
+      },
+      {
+        "CourseId": 5,
+        "Title": "Mobile App - Android, iOS",
+        "Description": "Develop mobile applications for Android and iOS.",
+        "Price": "USD 200",
+        "PriceUgx": "UGX 800,000",
+        "ClassTime": "2PM-4:30PM EAT",
+        "Duration": "2 Months",
+        "Image": "images/mobile.png"
+      }
+    ]
+  }
+  

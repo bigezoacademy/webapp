@@ -8,28 +8,30 @@
   <div class="row">
     <div class="col-md-3">
       <div class="p-3">
-        <a href="/academy">
+        <a (click)="navigateToAcademy()">
           <p class="text-center product">
-            <a href="/academy" class="btn btn-lg"
+            <a (click)="navigateToAcademy()" class="btn btn-lg"
               ><i class="bi bi-mortarboard-fill"></i><br />
               ACADEMY</a
             ><br />
 
-            <a href="/academy" class="btn-dark btn"> See Courses </a>
+            <a (click)="navigateToAcademy()" class="btn-dark btn">
+              See Courses
+            </a>
           </p>
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="p-3">
-        <a href="">
+        <a (click)="navigateToSms()">
           <p class="text-center product">
-            <a href="/sms" class="btn btn-lg"
+            <a (click)="navigateToSms()" class="btn btn-lg"
               ><i class="bi bi-windows"></i><br />
               CRM / BULK SMS</a
             ><br />
 
-            <a href="" class="btn-dark btn"> See Features </a>
+            <a (click)="navigateToSms()" class="btn-dark btn"> See Features </a>
           </p></a
         >
       </div>

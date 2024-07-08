@@ -3,7 +3,9 @@
   aria-label=" navbar example"
 >
   <div class="container-fluid m-0">
-    <a class="navbar-brand" href="/">BIGEZO</a>
+    <a class="navbar-brand" (click)="navigateToHome()">
+      <img src="images/logowhite.png" class="logo" alt="" srcset="" />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -19,10 +21,10 @@
     <div class="navbar-collapse collapse" id="navbarsExample07" style="">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" (click)="navigateToHome()">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Free-Downloads</a>
+          <a class="nav-link" href="#">Downloads</a>
         </li>
 
         <li class="nav-item dropdown active">
@@ -31,24 +33,55 @@
             href="#"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            >Services</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" (click)="navigateToAcademy()">Academy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="navigateToSms()">BULK SMS</a>
+            </li>
+            <li>
+              <a class="dropdown-item d-none" (click)="navigateToSms()"
+                >Company Profile Design</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item d-none" routerLink="/">Web Development</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown active d-none">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
             >Products</a
           >
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/academy">Academy</a></li>
-            <li><a class="dropdown-item" href="/sms">CRM / BULK SMS</a></li>
-            <li><a class="dropdown-item" href="#">SCHOOL PORTAL</a></li>
-            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li>
+              <a class="dropdown-item" (click)="navigateToSms()">CRM</a>
+            </li>
+            <li><a class="dropdown-item" routerLink="/">SCHOOL PORTAL</a></li>
           </ul>
         </li>
       </ul>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="btn btn-light m-1 me-5" aria-current="page" href="/signup"
+        <li class="nav-item" *ngIf="showSignup">
+          <a
+            class="btn btn-light m-1 me-5"
+            aria-current="page"
+            (click)="navigateToSignup()"
             >Signup</a
           >
         </li>
-        <li class="nav-item">
-          <a class="btn btn-primary m-1" aria-current="page" href="/login"
+        <li class="nav-item" *ngIf="showLogin">
+          <a
+            class="btn btn-primary m-1"
+            aria-current="page"
+            (click)="navigateToLogin()"
             >Login</a
           >
         </li>

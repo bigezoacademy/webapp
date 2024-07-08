@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { CoursesComponent } from "../../components/courses/courses.component";
+import { NavigationService } from '../../app/navigation.service';
 
 
 @Component({
@@ -10,5 +11,13 @@ import { CoursesComponent } from "../../components/courses/courses.component";
     imports: [CoursesComponent]
 })
 export class HomeComponent {
+constructor(private navigationService:NavigationService){
 
+}
+navigateToAcademy(){
+   this.navigationService.navigateToAcademy(); 
+}
+navigateToSms(){
+    this.navigationService.navigateToSms(); 
+ }
 }

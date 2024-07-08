@@ -7,13 +7,21 @@
 .dropdown-menu li a:hover {
   padding-bottom: 10px;
   padding-top: 10px;
-  border-bottom: 2px solid #000000;
-  background-color: #e7e7e7;
+  border: none;
+  background-color: #fd9191;
 }
 
 .dropdown-menu li a:clicked {
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 2px solid #000000;
-  background-color: #e7e7e7;
+  color: #e7e7e7;
+  background-color: #000000;
+}
+.logo {
+  width: 100px;
+}
+.dropdown-menu li a {
+  border-bottom: 2px solid #000000;
+  color: #000000 !important;
 }

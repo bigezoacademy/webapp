@@ -31,48 +31,53 @@
               SMS CAMPAIGN
               <span class="text-dark fw-bold">
                 <br />
-                Cost of Airtime</span
-              >
+                Cost of Airtime
+              </span>
             </h3>
-            <p class="text-primary">UGX 35/ SMS</p>
+            <p class="text-primary text-center py-3">UGX 35/ SMS</p>
 
-            <div id="container">
-              <div id="progress-bar">
-                <div id="draggable-button"></div>
-              </div>
+            <div id="container" class="text-center">
+              <input
+                type="range"
+                id="smsRange"
+                min="0"
+                max="40000"
+                [(ngModel)]="smsCount"
+                (input)="updateSMSCost()"
+                class="form-range"
+              />
 
               <table class="table">
                 <tr>
                   <td class="text-right">Number of SMS</td>
                   <td>
-                    <span class="h3 fw-bold text-danger" id="numberofsms"
-                      >0</span
-                    >
+                    <span class="h3 fw-bold text-danger">{{
+                      formatNumber(smsCount)
+                    }}</span>
                   </td>
                 </tr>
                 <tr>
                   <td class="text-right">Total Cost Of SMS</td>
                   <td>
-                    <span class="h3 fw-bold text-danger" id="totalcostofsms"
-                      >UGX 0</span
+                    <span class="h3 fw-bold text-danger"
+                      >UGX {{ formatNumber(totalCost) }}</span
                     >
                   </td>
                 </tr>
               </table>
+              <h2 class="text-center">
+                <a
+                  id="smsbutton"
+                  class="btn btn-dark py-2 fw-bold"
+                  (click)="smscalculator()"
+                >
+                  ENTER SPECIFIC VALUE
+                </a>
+              </h2>
             </div>
 
-            <h2 class="text-center">
-              <a
-                id="smsbutton"
-                class="btn btn-dark py-2 fw-bold"
-                onclick="smscalculator()"
-              >
-                ENTER SPECIFIC VALUE
-              </a>
-            </h2>
-
             <div id="calculatespecificsms" style="display: none">
-              <form onsubmit="specificsmsresult(event)">
+              <form (submit)="specificsmsresult($event)">
                 <p class="my-1">
                   <input
                     type="text"
@@ -82,108 +87,23 @@
                     class="mx-auto form-control w-75 text-center border-3 border-dark"
                   />
                 </p>
-                <p class="my-3">
-                  <button
-                    class="btn btn-danger border-0 w-75"
-                    onclick="specificsmsresult(event)"
-                  >
+                <p class="my-3 text-center">
+                  <button class="btn btn-danger border-0 w-75">
                     Calculate
                   </button>
                 </p>
-                <h2 class="">
+                <h2 class="text-center">
                   Total Cost :
-                  <span class="text-danger fw-bold" id="specificsmscost"></span>
+                  <span class="text-danger fw-bold" id="specificsmscost">{{
+                    specificSmsCost
+                  }}</span>
                 </h2>
               </form>
               <p class="my-1">
                 <a
                   id="sliderbutton"
                   class="btn btn-dark w-50 mx-auto py-2 fw-bold"
-                  onclick="smsslider()"
-                  style="display: none"
-                >
-                  USE SLIDER
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <script src="js/smscalc.js"></script>
-      </div>
-
-      <div class="col-md-6 mb-5 d-none">
-        <div class="p-3 shadow m-lg-3">
-          <div class="feature col">
-            <h1 class="text-black fs-2 mb-3 text-center">
-              <span class="bi bi-chat-dots-fill"></span>
-            </h1>
-            <h3 class="package fw-bold text-primary text-center">
-              Whatsapp <span class="text-dark">Campaign Cost</span>
-            </h3>
-            <p class="text-primary">UGX 200/ Whatsapp</p>
-
-            <div id="whatsappcontainer">
-              <div id="whatsappprogress-bar">
-                <div id="whatsappdraggable-button"></div>
-              </div>
-              <p>
-                Number of Whatsapp
-                <span class="h3 fw-bold text-danger" id="numberofwhatsapp"
-                  >0</span
-                >
-              </p>
-              <p>
-                Total Cost Of Whatsapp
-                <span class="h3 fw-bold text-danger" id="totalcostofwhatsapp"
-                  >UGX 0</span
-                >
-              </p>
-            </div>
-
-            <h2 class="text-center">
-              <a
-                id="whatsappbutton"
-                class="btn btn-dark py-2 fw-bold"
-                onclick="whatsappcalculator()"
-              >
-                ENTER SPECIFIC VALUE
-              </a>
-            </h2>
-
-            <div id="calculatespecificwhatsapp" style="display: none">
-              <form onsubmit="specificwhatsappresult(event)">
-                <p class="my-1">
-                  <input
-                    type="text"
-                    placeholder="Number of messages"
-                    name="specificwhatsapp"
-                    id="specificwhatsapp"
-                    class="mx-auto form-control w-75 text-center border-3 border-dark"
-                  />
-                </p>
-                <p class="my-3">
-                  <button
-                    class="btn btn-danger border-0 w-75"
-                    onclick="specificwhatsappresult(event)"
-                  >
-                    Calculate
-                  </button>
-                </p>
-                <h2 class="">
-                  Total Cost :
-                  <span
-                    class="text-danger fw-bold"
-                    id="specificwhatsappcost"
-                  ></span>
-                </h2>
-              </form>
-              <p class="my-1">
-                <a
-                  id="sliderbutton"
-                  class="btn btn-dark w-50 mx-auto py-2 fw-bold"
-                  onclick="whatsappslider()"
-                  style="display: none"
+                  (click)="smsslider()"
                 >
                   USE SLIDER
                 </a>
@@ -192,6 +112,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Other content here... -->
     </div>
 
     <div class="container-fluid my-3 row m-0">

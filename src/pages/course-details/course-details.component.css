@@ -163,7 +163,7 @@ h2 {
 .input-group {
   position: relative;
   width: 320px;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .input-group label {
@@ -190,4 +190,28 @@ h2 {
 .backtocourse a {
   color: #0041b2;
   text-decoration: underline;
+}
+input {
+  font-size: 18px !important;
+  border: none !important;
+  border-bottom: 1px solid #000000 !important;
+  border-radius: 0 !important;
+  text-align: center;
+}
+
+.success {
+  background-color: #3db135;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.selectedcourse {
+  background-color: #aaffa4;
+  width: 100%;
+  padding: 10px;
+}
+.benefits {
+  text-align: left;
+}
+.list-unstyled li h5 {
+  color: #666666;
 }

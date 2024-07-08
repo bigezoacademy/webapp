@@ -1,12 +1,12 @@
-<h4 class="text-center mt-3" *ngIf="showCourse">
+<h5 class="text-center mt-3" *ngIf="showCourse">
   <span> Course Details </span>
   <a (click)="goBack()" class="back-link ms-5"
-    ><i class="bi bi-arrow-left"></i> Back</a
+    ><i class="bi bi-arrow-left"></i> Other Courses</a
   >
-</h4>
+</h5>
 
 <div class="row" *ngIf="course && showCourse">
-  <div class="col-md-2"></div>
+  <div class="col-md-1"></div>
   <div class="col-md-8 p-3 p-md-5 row">
     <div class="col-md-6">
       <img [src]="course.Image" alt="{{ course.Title }}" class="img-fluid" />
@@ -18,7 +18,17 @@
       >
         {{ course.Title }}
       </h1>
-      <div class="p-3">
+      <p class="text-right my-1" *ngIf="!showSuccess">
+        <button (click)="register()" class="btn btn-primary m-3">
+          Register now
+        </button>
+      </p>
+      <p class="success text-center p-3 my-1" *ngIf="showSuccess">
+        <span class="bi bi-check2-circle me-1 display-3"></span><br />
+        You have already registered for this course. Our team will contact you
+        via email/phone
+      </p>
+      <div class="p-3 pt-0">
         <table class="table table-striped">
           <tr>
             <td class="coursetitle">Title:</td>
@@ -39,41 +49,191 @@
             <td>{{ course.Duration }}</td>
           </tr>
           <tr>
+            <td class="coursetitle">Max Intake:</td>
+            <td>{{ course.Max }}</td>
+          </tr>
+
+          <tr>
             <td class="coursetitle">Description:</td>
             <td>{{ course.Description }}</td>
           </tr>
         </table>
-        <p class="my-3 text-right mb-7">
-          <button (click)="register()" class="btn btn-primary m-3">
-            Register now
-          </button>
-        </p>
       </div>
       <h3 class="text-light my-5">...</h3>
     </div>
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-3 p-5 pt-0 mt-0">
+    <h2 class="text-left fw-bold benefits">Benefits</h2>
+    <ul class="list-unstyled">
+      <li class="">
+        <h5><i class="bi bi-check-all text-danger me-2"></i> Live Classes</h5>
+      </li>
+      <li class="">
+        <h5><i class="bi bi-check-all text-danger me-2"></i> Certificate</h5>
+      </li>
+      <li class="">
+        <h5 class="text-danger me-2">
+          <i class="bi bi-camera-video-fill text-danger me-2"></i> Session
+          Recordings
+        </h5>
+      </li>
+      <li class="">
+        <h5>
+          <i class="bi bi-check-all text-danger me-2"></i> Ask the Tutor any
+          questions
+        </h5>
+      </li>
+      <li class="">
+        <h5>
+          <i class="bi bi-check-all text-danger me-2"></i> Connect with other
+          students
+        </h5>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div class="row text-center p-3 bg" *ngIf="course && showForm">
   <h2 class="text-center text-light p-3">Register for this course</h2>
   <div class="wrapper mx-auto">
     <div class="form-wrapper sign-in">
-      <form action="">
+      <form #courseForm="ngForm" (ngSubmit)="submitForm(courseForm)">
         <div class="input-group">
-          <label for="">Course Title</label>
+          <h4 class="my-0 mt-3 fw-bold mx-auto selectedcourse">
+            {{ course.Title }}
+          </h4>
           <input
+            hidden
             type="text"
+            name="title"
+            class="inputtitle"
             placeholder="{{ course.Title }}"
-            value="{{ course.Title }}"
             required
+            [(ngModel)]="formData.title"
+            #title="ngModel"
           />
         </div>
-
-        <button (click)="submitForm()" class="btn btn-primary px-5">
-          Submit
+        <div class="input-group">
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            name="name"
+            [(ngModel)]="formData.name"
+            #name="ngModel"
+          />
+          <div
+            *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="text-danger mx-auto"
+          >
+            Name is required.
+          </div>
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            placeholder="Phone/ Whatsapp No."
+            required
+            name="phone"
+            [(ngModel)]="formData.phone"
+            #phone="ngModel"
+          />
+          <div
+            *ngIf="phone.invalid && (phone.dirty || phone.touched)"
+            class="text-danger mx-auto"
+          >
+            Phone is required.
+          </div>
+        </div>
+        <div class="input-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            [(ngModel)]="formData.email"
+            #email="ngModel"
+          />
+          <div
+            *ngIf="email.invalid && (email.dirty || email.touched)"
+            class="text-danger mx-auto"
+          >
+            Enter a valid email.
+          </div>
+        </div>
+        <div class="input-group text-center">
+          <p class="text-center mx-auto">
+            {{ course.Price }}
+            <span class="text-primary"> ---- ( {{ course.PriceUgx }})</span>
+          </p>
+          <input
+            hidden
+            type="text"
+            name="price"
+            placeholder="USD {{ course.Price }}"
+            [(ngModel)]="formData.price"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            name="country"
+            placeholder="Country"
+            required
+            [(ngModel)]="formData.country"
+            #country="ngModel"
+          />
+          <div
+            *ngIf="country.invalid && (country.dirty || country.touched)"
+            class="text-danger mx-auto"
+          >
+            Country is required.
+          </div>
+        </div>
+        <div class="input-group">
+          <select
+            name="course_month"
+            required
+            [(ngModel)]="formData.course_month"
+            #course_month="ngModel"
+          >
+            <option value="">Starting Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <div
+            *ngIf="
+              course_month.invalid &&
+              (course_month.dirty || course_month.touched)
+            "
+            class="text-danger mx-auto"
+          >
+            Starting month is required.
+          </div>
+        </div>
+        <div class="input-group">
+          <input
+            hidden
+            type="text"
+            name="date"
+            required
+            [(ngModel)]="formData.date"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary px-5">
+          Submit Application
         </button>
-        <div class="my-5">
+        <div class="my-3">
           <h5 class="backtocourse">
             <a (click)="ngOnInit()">
               <i class="bi bi-arrow-left"></i> Course Details</a

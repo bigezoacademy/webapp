@@ -11,15 +11,17 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 import { HttpClient } from '@angular/common/http';
 import { CoursesComponent } from '../components/courses/courses.component';
 import { CourseDetailsComponent } from '../pages/course-details/course-details.component';
+import { FooterComponent } from "../components/footer/footer.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavbarComponent, HeadingComponent, SubtitleComponent, AcademyComponent, HomeComponent, LoginComponent, SignupComponent, 
-      RouterModule,CommonModule,CoursesComponent,CourseDetailsComponent]
+    imports: [RouterOutlet, NavbarComponent, HeadingComponent, SubtitleComponent, AcademyComponent, HomeComponent, LoginComponent, SignupComponent,
+        RouterModule, CommonModule, CoursesComponent, CourseDetailsComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'bigezo-web-app';
+  
 }

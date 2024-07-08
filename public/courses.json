@@ -8,7 +8,8 @@
         "PriceUgx": "UGX 250,000",
         "ClassTime": "4PM-5PM EAT",
         "Duration": "4 weeks",
-        "Image": "images/graphic.png"
+        "Image": "images/graphic.png",
+        "Max": "30 Students"
       },
       {
         "CourseId": 2,
@@ -18,7 +19,8 @@
         "PriceUgx": "UGX 100,000",
         "ClassTime": "8:00 PM - 9:00 PM EAT",
         "Duration": "2 weeks",
-        "Image": "images/google.png"
+        "Image": "images/google.png",
+        "Max": "50 Students"
       },
       {
         "CourseId": 3,
@@ -28,7 +30,9 @@
         "PriceUgx": "UGX 600,000",
         "ClassTime": "8AM-9:30AM EAT",
         "Duration": "2 Months",
-        "Image": "images/website.png"
+        "Image": "images/website.png",
+        "Max": "20 Students"
+       
       },
       {
         "CourseId": 4,
@@ -38,7 +42,9 @@
         "PriceUgx": "UGX 800,000",
         "ClassTime": "10AM-12NOON EAT",
         "Duration": "2 Months",
-        "Image": "images/java.png"
+        "Image": "images/java.png",
+        "Max": "12 Students"
+       
       },
       {
         "CourseId": 5,
@@ -48,8 +54,10 @@
         "PriceUgx": "UGX 800,000",
         "ClassTime": "2PM-4:30PM EAT",
         "Duration": "2 Months",
-        "Image": "images/mobile.png"
+        "Image": "images/mobile.png",
+        "Max": "12 Students"
       }
+     
     ]
   }
   

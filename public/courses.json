@@ -1,63 +1,146 @@
 {
-    "courses": [
-      {
-        "CourseId": 1,
-        "Title": "Graphic Design",
-        "Description": "Learn the fundamentals of graphic design.",
-        "Price": "USD 70",
-        "PriceUgx": "UGX 250,000",
-        "ClassTime": "4PM-5PM EAT",
-        "Duration": "4 weeks",
-        "Image": "images/graphic.png",
-        "Max": "30 Students"
-      },
-      {
-        "CourseId": 2,
-        "Title": "Google Tools",
-        "Description": "Master Google tools for productivity and collaboration.",
-        "Price": "USD 30",
-        "PriceUgx": "UGX 100,000",
-        "ClassTime": "8:00 PM - 9:00 PM EAT",
-        "Duration": "2 weeks",
-        "Image": "images/google.png",
-        "Max": "50 Students"
-      },
-      {
-        "CourseId": 3,
-        "Title": "Website Design",
-        "Description": "Create stunning and responsive websites.",
-        "Price": "USD 160",
-        "PriceUgx": "UGX 600,000",
-        "ClassTime": "8AM-9:30AM EAT",
-        "Duration": "2 Months",
-        "Image": "images/website.png",
-        "Max": "20 Students"
-       
-      },
-      {
-        "CourseId": 4,
-        "Title": "Advanced Web App",
-        "Description": "Build advanced web applications with modern frameworks.",
-        "Price": "USD 200",
-        "PriceUgx": "UGX 800,000",
-        "ClassTime": "10AM-12NOON EAT",
-        "Duration": "2 Months",
-        "Image": "images/java.png",
-        "Max": "12 Students"
-       
-      },
-      {
-        "CourseId": 5,
-        "Title": "Mobile App - Android, iOS",
-        "Description": "Develop mobile applications for Android and iOS.",
-        "Price": "USD 200",
-        "PriceUgx": "UGX 800,000",
-        "ClassTime": "2PM-4:30PM EAT",
-        "Duration": "2 Months",
-        "Image": "images/mobile.png",
-        "Max": "12 Students"
-      }
-     
-    ]
-  }
-  
+  "courses": [
+    {
+      "CourseId": 1,
+      "Title": "Graphic Design",
+      "Description": "Learn the fundamentals of graphic design.",
+      "Price": "USD 70",
+      "PriceUgx": "UGX 250,000",
+      "ClassTime": "4PM-5PM EAT",
+      "Duration": "4 weeks",
+      "Image": "images/graphic.png",
+      "Max": "30 Students",
+     "ClassDays": ["Monday-Friday"],
+      "Next": "Every new Month",
+      "Topics": [
+        "Introduction to Graphic Design Principles",
+        "Adobe Illustrator Basics (interface, tools)",
+        "Creating vector graphics in Illustrator",
+        "Adobe Photoshop Basics (interface, tools)",
+        "Photo editing and manipulation",
+        "Techniques of Changing photo backgrounds",
+        "Using Online graphic design tools (Canva & Figma)",
+        "Creating fliers (Marketing Campaigns/ Advertisement)",
+        "Logo Design in Illustrator and other platforms",
+        "Design dimensioning & resolution",
+        "Exporting graphics for print/social media (settings)",
+        "Creating a company profile",
+        "Designing with AI",
+        "Final design project(s)"
+      ]
+    },
+    {
+      "CourseId": 2,
+      "Title": "Google Tools",
+      "Description": "Master Google tools for productivity and collaboration.",
+      "Price": "USD 30",
+      "PriceUgx": "UGX 100,000",
+      "ClassTime": "8:00 PM - 9:00 PM EAT",
+      "Duration": "2 weeks",
+      "Image": "images/google.png",
+      "Max": "50 Students",
+      "ClassDays": ["Monday","Tuesday","Thursday","Friday"],
+     "Next": "Every new Month",
+      "Topics": [
+        "Preparing a Professional report in Google Docs from scratch, using Automatic Table of contents, page numbers, references, images, etc.",
+        "Practical Comparison between Google Docs & MS Word.",
+        "Simple functions in Google Sheets (Sum, Average, Multiply, ...)",
+        "Practical comparison between Google Sheets & MS Excel.",
+        "Preparing a professional presentation using Google Slides.",
+        "Practical Comparison between Google Slides & MS Powerpoint.",
+        "Using Google Drive to backup/store your important files.",
+        "How to create professional email signatures using GMAIL.",
+        "How to secure your emails from hackers - Best practices.",
+        "How to use templates. - Create resumes, CV, etc.",
+        "The Best Way to send large files via email (+other alternatives).",
+        "Some useful AI tools & Plugins",
+        "QUESTION & ANSWER sessions"
+      ]
+    },
+    {
+      "CourseId": 3,
+      "Title": "Website Design",
+      "Description": "Create stunning and responsive websites.",
+      "Price": "USD 160",
+      "PriceUgx": "UGX 600,000",
+      "ClassTime": "8AM-9:30AM EAT",
+      "Duration": "2 Months",
+      "Image": "images/website.png",
+      "Max": "20 Students",
+      "ClassDays": ["Monday-Friday"],
+    "Next": "FEB, APR, JUN, AUG, OCT",
+      "Topics": [
+        "Understanding the basics of web development",
+        "HTML syntax and structure",
+        "Working with HTML tags and elements",
+        "Creating forms and handling user input",
+        "Basics of CSS for styling web pages",
+        "Selectors and properties",
+        "Responsive design and media queries",
+        "JavaScript Basics",
+        "CSS Frameworks (bootstrap, tailwind, etc.)",
+        "Building a Website using CMS (e.g. Wordpress)",
+        "Basics of web hosting and domains",
+        "Final Project",
+        "Introduction to Back-end Development"
+      ]
+    },
+    {
+      "CourseId": 4,
+      "Title": "Advanced Web App",
+      "Description": "Build advanced web applications with modern frameworks.",
+      "Price": "USD 200",
+      "PriceUgx": "UGX 800,000",
+      "ClassTime": "10AM-12NOON EAT",
+      "Duration": "2 Months",
+      "Image": "images/java.png",
+      "Max": "12 Students",
+      "ClassDays": ["Monday-Friday"],
+      "Next": "FEB, APR, JUN, AUG, OCT",
+      "Topics": [
+        "Introduction to Back-End Development",
+        "Introduction to Object Oriented Programming",
+        "Java Programming Basics",
+        "Introduction to MVC architecture",
+        "Spring Boot Fundamentals",
+        "Working with Databases (MySQL)",
+        "RESTful API Development",
+        "Securing Applications with Spring Security",
+        "Version Control with Git",
+        "Creating a Simple CRUD Application",
+        "Deploying Spring Boot Applications",
+        "Error Handling and Logging",
+        "Final project"
+      ]
+    },
+    {
+      "CourseId": 5,
+      "Title": "Mobile App - Android, iOS",
+      "Description": "Develop mobile applications for Android and iOS.",
+      "Price": "USD 200",
+      "PriceUgx": "UGX 800,000",
+      "ClassTime": "2PM-4:30PM EAT",
+      "Duration": "2 Months",
+      "Image": "images/mobile.png",
+      "Max": "12 Students",
+      "ClassDays": ["Monday-Friday"],
+      "Next": "FEB, APR, JUN, AUG, OCT",
+      "Topics": [
+        "Introduction to Object Oriented Programming",
+        "Dart Programming Basics",
+        "Introduction to Flutter Framework",
+        "Understanding Flutter Widgets",
+        "Flutter UI Design and Layouts",
+        "State Management in Flutter",
+        "Working with Local Databases in Flutter",
+        "Flutter and Firebase",
+        "Version Control with Git",
+        "Creating a Simple CRUD Mobile App",
+        "Deploying Flutter Applications",
+        "Error Handling and Logging in Flutter",
+        "Final Flutter Project",
+        "Build Apps that work on both Apple and Android"
+      ]
+    }
+  ]
+}

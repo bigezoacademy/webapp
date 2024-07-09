@@ -29,10 +29,15 @@
         via email/phone
       </p>
       <div class="p-3 pt-0">
+        <!-- course.component.html -->
         <table class="table table-striped">
           <tr>
             <td class="coursetitle">Title:</td>
             <td>{{ course.Title }}</td>
+          </tr>
+          <tr>
+            <td class="coursetitle">Description:</td>
+            <td>{{ course.Description }}</td>
           </tr>
           <tr>
             <td class="coursetitle">Price:</td>
@@ -52,12 +57,25 @@
             <td class="coursetitle">Max Intake:</td>
             <td>{{ course.Max }}</td>
           </tr>
+          <tr>
+            <td class="coursetitle">Class Days:</td>
+            <td>{{ course.ClassDays.join(", ") }}</td>
+          </tr>
 
           <tr>
-            <td class="coursetitle">Description:</td>
-            <td>{{ course.Description }}</td>
+            <td class="coursetitle">Next Intake:</td>
+            <td class="text-danger fw-bold">{{ course.Next }}</td>
           </tr>
         </table>
+        <div class="">
+          <p class="h3 fw-bold">Topics:</p>
+          <ul class="list-unstyled">
+            <li *ngFor="let topic of course.Topics">
+              <i class="bi bi-check text-success"></i> {{ topic }}
+            </li>
+          </ul>
+          <hr />
+        </div>
       </div>
       <h3 class="text-light my-5">...</h3>
     </div>

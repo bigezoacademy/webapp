@@ -37,6 +37,7 @@ export class CourseDetailsComponent implements OnInit {
     });
     this.formData.date = this.getFormattedDate();
     this.formData.year = this.getYear();
+    this.formData.time = this.getFormattedTime();
   }
 
   getFormattedDate(): string {
@@ -51,6 +52,16 @@ export class CourseDetailsComponent implements OnInit {
     return `${day}-${month}-${year}`;
   }
 
+  getFormattedTime(): string {
+    const date = new Date();
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    const minutesStr = minutes < 10 ? '0' + minutes : minutes.toString();
+    return `${hours}:${minutesStr} ${ampm}`;
+  }
   getYear(): string {
     const date = new Date();
     return date.getFullYear().toString();
@@ -99,7 +110,8 @@ export class CourseDetailsComponent implements OnInit {
     email: '',
     price: '',
     country: '',
-    date: ''
+    date: '',
+    time: ''
   };
 
 

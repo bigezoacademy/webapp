@@ -69,11 +69,16 @@
         </table>
         <div class="">
           <p class="h3 fw-bold">Topics:</p>
-          <ul class="list-unstyled">
-            <li *ngFor="let topic of course.Topics">
-              <i class="bi bi-check text-success"></i> {{ topic }}
-            </li>
-          </ul>
+
+          <table class="table2 table-striped">
+            <tr *ngFor="let topic of course.Topics">
+              <td class="text-left">
+                <i class="bi bi-check text-success bg-none"></i>
+              </td>
+              <td class="text-left">{{ topic }}</td>
+            </tr>
+          </table>
+
           <hr />
         </div>
       </div>

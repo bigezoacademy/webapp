@@ -215,3 +215,16 @@ input {
 .list-unstyled li h5 {
   color: #666666;
 }
+.bg-none {
+  background-color: transparent !important;
+}
+.table2 tr td {
+  padding: 5px;
+  border-bottom: 1px solid #d8d7d7;
+}
+.table2 tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+.table2 {
+  width: 100%;
+}

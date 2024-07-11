@@ -2,7 +2,7 @@
   "courses": [
     {
       "CourseId": 1,
-      "Title": "Graphic Design",
+      "Title": "Graphic Design  (Beginner to Pro)",
       "Description": "Learn the fundamentals of graphic design.",
       "Price": "USD 70",
       "PriceUgx": "UGX 250,000",
@@ -32,7 +32,7 @@
     },
     {
       "CourseId": 2,
-      "Title": "Google Tools",
+      "Title": "Google Tools (Beginner to Pro)",
       "Description": "Master Google tools for productivity and collaboration.",
       "Price": "USD 30",
       "PriceUgx": "UGX 100,000",
@@ -61,7 +61,7 @@
     },
     {
       "CourseId": 3,
-      "Title": "Website Design",
+      "Title": "Website Design & Development",
       "Description": "Create stunning and responsive websites.",
       "Price": "USD 160",
       "PriceUgx": "UGX 600,000",
@@ -90,7 +90,7 @@
     },
     {
       "CourseId": 4,
-      "Title": "Advanced Web App",
+      "Title": "Advanced Web App Development",
       "Description": "Build advanced web applications with modern frameworks.",
       "Price": "USD 200",
       "PriceUgx": "UGX 800,000",
@@ -121,7 +121,7 @@
     },
     {
       "CourseId": 5,
-      "Title": "Mobile App - Android, iOS",
+      "Title": "Mobile App Development- Android, iOS",
       "Description": "Develop mobile applications for Android and iOS.",
       "Price": "USD 200",
       "PriceUgx": "UGX 800,000",

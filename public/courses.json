@@ -2,7 +2,7 @@
   "courses": [
     {
       "CourseId": 1,
-      "Title": "Graphic Design  (Beginner to Pro)",
+      "Title": "Graphic Design  (Basic to Pro)",
       "Description": "Learn the fundamentals of graphic design.",
       "Price": "USD 70",
       "PriceUgx": "UGX 250,000",
@@ -32,7 +32,7 @@
     },
     {
       "CourseId": 2,
-      "Title": "Google Tools (Beginner to Pro)",
+      "Title": "Google Tools (Basic to Pro)",
       "Description": "Master Google tools for productivity and collaboration.",
       "Price": "USD 30",
       "PriceUgx": "UGX 100,000",

@@ -19,3 +19,6 @@ td {
   background-color: #ffffff;
   background-image: url("/images/bg/cartographer.png");
 }
+.text-uppercase {
+  text-transform: uppercase;
+}

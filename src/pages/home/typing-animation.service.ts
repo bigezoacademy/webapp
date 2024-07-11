@@ -4,10 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TypingAnimationService {
+
   private phrases: string[] = [
-    'GET MENTORSHIP',
     'SIGN UP FOR AUGUST INTAKE',
-    'GET CERTIFICATE'
+    'LIVE ONLINE CLASSES',
+    'EFFECTIVE TECHNOLOGY !'
   ];
   private currentPhraseIndex: number = 0;
   private currentCharacterIndex: number = 0;

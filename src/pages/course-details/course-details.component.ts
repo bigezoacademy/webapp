@@ -6,27 +6,27 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import Swal from 'sweetalert2';
 
-
 @Component({
   selector: 'app-course-details',
   templateUrl: './course-details.component.html',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FormsModule,], // Include HttpClientModule and FormsModule here
+  imports: [CommonModule, HttpClientModule, FormsModule, SweetAlert2Module], // Include HttpClientModule and FormsModule here
   styleUrls: ['./course-details.component.css']
 })
 export class CourseDetailsComponent implements OnInit {
   course: any;
   showCourse: boolean = true;
-  showSuccess:boolean=false;
+  showSuccess: boolean = false;
   showForm: boolean = false;
   private jsonUrl = '/courses.json';
   showSuccessMessage: boolean = false;
+  isSubmitting: boolean = false;
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.showCourse = true;
-    this.showForm=false;
+    this.showForm = false;
     const courseId = +this.route.snapshot.paramMap.get('id')!;
     this.http.get(this.jsonUrl).subscribe((res: any) => {
       this.course = res.courses.find((course: any) => course.CourseId === courseId);
@@ -62,6 +62,7 @@ export class CourseDetailsComponent implements OnInit {
     const minutesStr = minutes < 10 ? '0' + minutes : minutes.toString();
     return `${hours}:${minutesStr} ${ampm}`;
   }
+
   getYear(): string {
     const date = new Date();
     return date.getFullYear().toString();
@@ -114,19 +115,31 @@ export class CourseDetailsComponent implements OnInit {
     time: ''
   };
 
-
   submitForm(form: NgForm): void {
     if (form.valid) {
+      this.isSubmitting = true;
+      Swal.fire({
+        title: 'Sending your application...',
+        html: 'Please wait while we process your request.',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+
       this.http.post(this.sheetDbUrl, this.formData).subscribe(
         response => {
+          Swal.close();
+          this.isSubmitting = false;
           this.showSuccessAlert();
-          this.showSuccess=true;
+          this.showSuccess = true;
           this.showCourse = true;
           this.showForm = false;
           this.showSuccessMessage = true;
         },
         error => {
-         
+          Swal.close();
+          this.isSubmitting = false;
           this.showErrorSendAlert();
         }
       );
@@ -134,28 +147,30 @@ export class CourseDetailsComponent implements OnInit {
       this.showErrorAlert();
     }
   }
- showSuccessAlert():void{
-  Swal.fire({
-    title: "Done!",
-    text: "Successfully Registered",
-    icon: "success"
-  });
- }
- showErrorAlert():void{
-  Swal.fire({
-    icon: "error",
-    title: "Oops...",
-    text: "Please fill in all fields",
-    footer: '<a href="#">Also select a month?</a>'
-  });
- }
- showErrorSendAlert():void{
-  Swal.fire({
-    icon: "error",
-    title: "Oops...",
-    text: "Check your internect connection",
-    footer: '<a href="#">Make sure all fields are filled</a>'
-  });
- }
 
+  showSuccessAlert(): void {
+    Swal.fire({
+      title: "Done!",
+      text: "Successfully Registered",
+      icon: "success"
+    });
+  }
+
+  showErrorAlert(): void {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please fill in all fields",
+      footer: '<a href="#">Also select a month?</a>'
+    });
+  }
+
+  showErrorSendAlert(): void {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Check your internet connection",
+      footer: '<a href="#">Make sure all fields are filled</a>'
+    });
+  }
 }

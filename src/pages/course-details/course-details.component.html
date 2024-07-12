@@ -253,7 +253,11 @@
             [(ngModel)]="formData.date"
           />
         </div>
-        <button type="submit" class="btn btn-primary px-5">
+        <button
+          type="submit"
+          class="btn btn-primary px-5"
+          [disabled]="isSubmitting"
+        >
           Submit Application
         </button>
         <div class="my-3">

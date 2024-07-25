@@ -38,4 +38,7 @@ navigateToAcademy(){
 navigateToSms(){
     this.navigationService.navigateToSms(); 
  }
+ navigateToCard(){
+  this.navigationService.navigateToCard(); 
+}
 }

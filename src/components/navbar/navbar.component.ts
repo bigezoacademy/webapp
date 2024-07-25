@@ -22,6 +22,10 @@ navigateToAcademy(): void {
   this.navigationService.navigateToAcademy();
 }
 
+navigateToCard(): void {
+  this.navigationService.navigateToCard();
+}
+
 navigateToSms(): void {
   this.navigationService.navigateToSms();
 }

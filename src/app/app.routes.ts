@@ -7,6 +7,7 @@ import { HomeComponent } from '../pages/home/home.component';
 import { SignupComponent } from '../pages/signup/signup.component';
 import { CourseDetailsComponent } from '../pages/course-details/course-details.component';
 import { SmsComponent } from '../pages/sms/sms.component';
+import { CardgeneratorComponent } from '../pages/cardgenerator/cardgenerator.component';
 
 
 export const routes: Routes = [
@@ -30,6 +31,10 @@ export const routes: Routes = [
     {
         path:'signup',
         component:SignupComponent
+    },
+    {
+        path:'cardgenerator',
+        component:CardgeneratorComponent
     },
     {
         path:'academy',

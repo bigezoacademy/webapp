@@ -52,7 +52,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown active d-none">
+        <li class="nav-item dropdown active">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -62,9 +62,15 @@
           >
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" (click)="navigateToSms()">CRM</a>
+              <a class="dropdown-item" (click)="navigateToSms()"
+                ><i class="bi bi-windows me-3"></i> CRM DESKTOP APP</a
+              >
             </li>
-            <li><a class="dropdown-item" routerLink="/">SCHOOL PORTAL</a></li>
+            <li>
+              <a class="dropdown-item" (click)="navigateToCard()"
+                ><i class="bi bi-windows me-3"></i> BULK CARD GENERATOR</a
+              >
+            </li>
           </ul>
         </li>
       </ul>

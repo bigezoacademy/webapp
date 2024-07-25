@@ -13,6 +13,9 @@ export class NavigationService {
   navigateToAcademy(): void {
     this.router.navigate(['/academy']);
   }
+  navigateToCard(): void {
+    this.router.navigate(['/cardgenerator']);
+  }
   navigateToSms(): void {
     this.router.navigate(['/sms']);
   }

@@ -31,3 +31,19 @@ body {
 .text-left {
   text-align: left !important;
 }
+.chosenapp {
+  padding: 10px;
+  background-color: #fff7f7;
+  color: #b60f0f;
+}
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 2px solid #000000;
+}
+.navbar-brand,
+.nav-link,
+.dropdown-item,
+.btn {
+  cursor: pointer;
+}

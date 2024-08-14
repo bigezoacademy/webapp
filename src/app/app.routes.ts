@@ -8,6 +8,7 @@ import { SignupComponent } from '../pages/signup/signup.component';
 import { CourseDetailsComponent } from '../pages/course-details/course-details.component';
 import { SmsComponent } from '../pages/sms/sms.component';
 import { CardgeneratorComponent } from '../pages/cardgenerator/cardgenerator.component';
+import { ReceiptmakerComponent } from '../pages/receiptmaker/receiptmaker.component';
 
 
 export const routes: Routes = [
@@ -24,6 +25,7 @@ export const routes: Routes = [
         component:HomeComponent
     },
     {path:'sms',component:SmsComponent},
+    {path: 'receiptmaker',component:ReceiptmakerComponent},
     {
         path:'login',
         component:LoginComponent

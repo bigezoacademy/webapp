@@ -25,6 +25,9 @@ navigateToAcademy(): void {
 navigateToCard(): void {
   this.navigationService.navigateToCard();
 }
+navigateToReceipt(): void {
+  this.navigationService.navigateToReceipt();
+}
 
 navigateToSms(): void {
   this.navigationService.navigateToSms();

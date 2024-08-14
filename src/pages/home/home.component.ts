@@ -41,4 +41,7 @@ navigateToSms(){
  navigateToCard(){
   this.navigationService.navigateToCard(); 
 }
+navigateToReceipt(){
+  this.navigationService.navigateToReceipt(); 
+}
 }

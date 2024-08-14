@@ -61,11 +61,18 @@
             >Products</a
           >
           <ul class="dropdown-menu">
-            <li>
+            <li class="d-none">
               <a class="dropdown-item" (click)="navigateToSms()"
                 ><i class="bi bi-windows me-3"></i> CRM DESKTOP APP</a
               >
             </li>
+
+            <li>
+              <a class="dropdown-item" (click)="navigateToReceipt()"
+                ><i class="bi bi-android me-3"></i> RECEIPT MAKER APP</a
+              >
+            </li>
+
             <li>
               <a class="dropdown-item" (click)="navigateToCard()"
                 ><i class="bi bi-windows me-3"></i> BULK CARD GENERATOR</a

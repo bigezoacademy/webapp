@@ -11,24 +11,56 @@ import Swal from 'sweetalert2';
 export class CardpricingComponent {
   showPricing:boolean=true;
   showForm:boolean=false;
- getPremium(): void {
+
+  getPremium(PREMIUM_APP: string): void {
     Swal.fire({
       html: `
         <div class="text-center">
-          <h3 class="text-center text-dark">
-          GET PREMIUM VERSION
-          </h3>
-        <div class="d-none">   <h3 class="text-center"> <a class="btn btn-dark">Fill a Form</a> </h3>
-          <p class="text-center">OR</p>
-         ></div>
-          <p class="text-center">
-           <a href="https://api.whatsapp.com/send?phone=+256773913902&text=Hello%20Alfred!" class="btn btn-success">Order via Whatsapp</a>
-          </p
+          <!-- Displaying the value of PREMIUM_APP -->
+          <h4 class="chosenapp"> <strong>${PREMIUM_APP}</strong></h4>
+          <form id="orderForm" class="d-none">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-control" id="paymentMode" name="paymentMode" required>
+                <option value="" disabled selected>Select Payment Mode</option>
+                <option value="mobile-money">Mobile Money</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="mt-3">
+            <p class="text-center d-none">OR</p>
+            <a href="https://api.whatsapp.com/send?phone=+256773913902&text=Hello%20Bigezo!" class="btn btn-success m-2">Order via Whatsapp</a>
+            <a href="mailto:bigezoacademy@gmail.com" target="_blank" class="btn btn-danger m-2">Order via Email</a>
+          </div>
         </div>
       `,
-      showConfirmButton: false
+      showConfirmButton: false,
+      showCloseButton: true,
+      didOpen: () => {
+        const form = document.getElementById('orderForm') as HTMLFormElement;
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          // Handle form submission here, with access to PREMIUM_APP
+          console.log('Form submitted with PREMIUM_APP:', PREMIUM_APP);
+        });
+      }
     });
   }
+  
 
   getFree(): void {
     const link = document.createElement('a');

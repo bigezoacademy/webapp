@@ -25,4 +25,7 @@ export class NavigationService {
   navigateToLogin(): void {
     this.router.navigate(['/login']);
   }
+  navigateToReceipt(): void {
+    this.router.navigate(['/receiptmaker']);
+  }
 }

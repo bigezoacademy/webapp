@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class TypingAnimationService {
   private phrases: string[] = [
     'GET MENTORSHIP',
-    'SIGN UP FOR AUGUST INTAKE',
+    'CONVENIENT CLASS TIME',
     'GET CERTIFICATE'
   ];
   private currentPhraseIndex: number = 0;

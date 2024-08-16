@@ -109,7 +109,7 @@ export class ImageCreatorComponent {
       this.textInputs.forEach(input => {
         ctx.font = `${input.size} serif`;  
         ctx.fillStyle = input.color;  
-        ctx.fillText(input.text, 50, yOffset);  
+        ctx.fillText(input.text, 70, yOffset);  
         yOffset += parseInt(input.size) + 10; // Add some margin after each text
       });
 

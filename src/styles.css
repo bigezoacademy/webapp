@@ -53,3 +53,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.image-wrapper img {
+  max-width: 200px !important;
+}

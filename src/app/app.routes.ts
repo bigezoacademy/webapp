@@ -9,6 +9,7 @@ import { CourseDetailsComponent } from '../pages/course-details/course-details.c
 import { SmsComponent } from '../pages/sms/sms.component';
 import { CardgeneratorComponent } from '../pages/cardgenerator/cardgenerator.component';
 import { ReceiptmakerComponent } from '../pages/receiptmaker/receiptmaker.component';
+import { ImageCreatorComponent } from '../pages/image-creator/image-creator.component';
 
 
 export const routes: Routes = [
@@ -41,6 +42,10 @@ export const routes: Routes = [
     {
         path:'academy',
         component:AcademyComponent
+    },
+    {
+        path:'inspire',
+        component:ImageCreatorComponent
     },
     {
       path:'',

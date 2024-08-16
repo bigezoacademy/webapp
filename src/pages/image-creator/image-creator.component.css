@@ -1,0 +1,86 @@
+.createbtn {
+  background-color: rgb(166, 0, 0);
+  font-size: 20px;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.downloadbtn {
+  background-color: rgb(68, 68, 68);
+  font-size: 20px;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.canvassection {
+  margin: 0 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.output {
+  margin: 5px;
+}
+.imagepagetitle {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  color: #ff2525;
+  background-color: #000000;
+  font-weight: 400;
+  border-top: 2px solid #5d5d5d;
+  margin: 0;
+}
+.choosefile {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.image-wrapper {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.image-wrapper .image-checkbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.image-wrapper img {
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper img.selected {
+  opacity: 0.7;
+  border: 2px solid #007bff;
+}
+
+.image-wrapper img:hover {
+  opacity: 0.9;
+}
+
+.image-wrapper.selected {
+  border-color: #007bff;
+}
+
+.selected-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.selected-info .image-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.selected-info button {
+  margin-left: 10px;
+}

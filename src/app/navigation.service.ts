@@ -28,4 +28,7 @@ export class NavigationService {
   navigateToReceipt(): void {
     this.router.navigate(['/receiptmaker']);
   }
+  navigateToInspire(): void {
+    this.router.navigate(['/inspire']);
+  }
 }

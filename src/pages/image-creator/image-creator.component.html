@@ -3,11 +3,27 @@
   <div class="row">
     <div class="col-md-6">
       <div class="image-creator">
-        <textarea
-          class="form-control"
-          [(ngModel)]="userInput"
-          placeholder="Enter text here"
-        ></textarea>
+        <div *ngFor="let input of textInputs; let i = index" class="mb-3">
+          <textarea
+            class="form-control mb-1"
+            [(ngModel)]="input.text"
+            placeholder="Enter text here"
+          ></textarea>
+          <select [(ngModel)]="input.color" class="form-control mb-1">
+            <option *ngFor="let color of textColors" [value]="color.value">
+              {{ color.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.size" class="form-control mb-3">
+            <option *ngFor="let size of textSizes" [value]="size.value">
+              {{ size.name }}
+            </option>
+          </select>
+        </div>
+
+        <button class="btn btn-secondary mb-3" (click)="addTextInput()">
+          Add Text
+        </button>
 
         <div class="background-images">
           <p class="text-center choosefile my-3">
@@ -69,6 +85,7 @@
         </p>
       </div>
     </div>
+
     <div class="col-md-6">
       <h3 class="text-warning">The Output will be shown here</h3>
       <div class="canvassection">

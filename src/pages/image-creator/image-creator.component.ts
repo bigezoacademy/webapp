@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./image-creator.component.css']  
 })  
 export class ImageCreatorComponent {  
-  userInput: string = '';  
+  textInputs: { text: string, color: string, size: string }[] = [];  
   selectedBackground: string | null = null;  
   imageDataUrl: string | undefined;  
   uploadedImage: string | null = null;
@@ -22,6 +22,25 @@ export class ImageCreatorComponent {
     '/images/cards/bg3.jpg',
     '/images/cards/bg4.jpg'  
   ];  
+  
+  textColors = [
+    { name: 'White', value: '#FFFFFF' },
+    { name: 'Black', value: '#000000' },
+    { name: 'Yellow', value: '#FFFF00' },
+    { name: 'Red', value: '#FF0000' },
+    { name: 'Blue', value: '#0000FF' },
+    { name: 'Green', value: '#008000' }
+  ];
+  
+  textSizes = [
+    { name: 'h1', value: '72px' },
+    { name: 'h2', value: '60px' },
+    { name: 'h3', value: '48px' },
+    { name: 'h4', value: '36px' },
+    { name: 'h5', value: '24px' },
+    { name: 'h6', value: '20px' },
+    { name: 'p', value: '16px' }
+  ];
 
   @ViewChild('canvasElement') canvasElement!: ElementRef<HTMLCanvasElement>;  
 
@@ -30,7 +49,6 @@ export class ImageCreatorComponent {
     this.uploadedImage = null; // Reset uploaded image if a background is selected
   }
   
-
   onImageUpload(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files[0]) {
@@ -43,35 +61,30 @@ export class ImageCreatorComponent {
     }
   }
 
+  addTextInput() {
+    this.textInputs.push({ text: '', color: '#FFFF00', size: '16px' }); // Default color and size
+  }
+
   createImage() {  
     const imageSource = this.uploadedImage || this.selectedBackground;
     
-    // Check if either the image source or user input is missing
-    if (!this.userInput && !imageSource ) {  
+    // Check if either the image source or any text input is missing
+    if (this.textInputs.every(input => input.text.trim() === '') || !imageSource) {  
       Swal.fire({
         icon: 'error',
-        title: 'Please enter text & select an image',
+        title: 'Please enter at least one text input & select an image',
       });
       return;  
     }  
     
-    if (!imageSource ) {  
+    if (!imageSource) {  
       Swal.fire({
         icon: 'error',
         title: 'Please select an image to use.',
-       
       });
       return;  
-    } 
-    if (!this.userInput) {  
-      Swal.fire({
-        icon: 'error',
-        title: 'Please enter text before creating the image',
-      });
-      return;  
-    }   
+    }  
 
-  
     const canvas = this.canvasElement.nativeElement;  
     const ctx = canvas.getContext('2d');  
   
@@ -87,17 +100,23 @@ export class ImageCreatorComponent {
       canvas.width = img.width;  
       canvas.height = img.height;  
       ctx.drawImage(img, 0, 0);  
-      ctx.font = '48px serif';  
-      ctx.fillStyle = 'white';  
-      ctx.fillText(this.userInput, 50, 100);  
+
+      let yOffset = 100; // Starting Y position for text
+      this.textInputs.forEach(input => {
+        ctx.font = `${input.size} serif`;  
+        ctx.fillStyle = input.color;  
+        ctx.fillText(input.text, 50, yOffset);  
+        yOffset += parseInt(input.size) + 10; // Add some margin after each text
+      });
+
       this.imageDataUrl = canvas.toDataURL('image/jpeg');  
     };  
   }
+
   deselectImage() {
     this.selectedBackground = null;
     this.uploadedImage = null; // Reset uploaded image if deselected
   }
-    
 
   downloadImage() {  
     const link = document.createElement('a');  

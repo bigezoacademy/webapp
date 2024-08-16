@@ -11,13 +11,20 @@
             placeholder="Enter text here"
           ></textarea>
           <select [(ngModel)]="input.color" class="form-control mb-1">
+            <option value="" disabled selected>Choose text color</option>
             <option *ngFor="let color of textColors" [value]="color.value">
               {{ color.name }}
             </option>
           </select>
           <select [(ngModel)]="input.size" class="form-control mb-1">
+            <option value="" disabled selected>Choose text size</option>
             <option *ngFor="let size of textSizes" [value]="size.value">
               {{ size.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.font" class="form-control mb-1">
+            <option *ngFor="let font of textFonts" [value]="font.value">
+              {{ font.name }}
             </option>
           </select>
           <button class="btn btn-danger" (click)="removeTextInput(i)">
@@ -37,31 +44,35 @@
               (change)="onImageUpload($event)"
             />
           </p>
-          <h3 class="p3 text-center">Or Select Background</h3>
+          <h3
+            class="p3 text-center text-secondary"
+            *ngIf="!selectedBackground && !uploadedImage"
+          >
+            Or Select Background
+          </h3>
 
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <!-- Display available background images horizontally -->
-                <div
-                  class="col-2 col-"
-                  *ngFor="let bgImage of backgroundImages"
-                >
-                  <div class="image-wrapper m-1">
-                    <input
-                      type="checkbox"
-                      class="image-checkbox"
-                      [checked]="bgImage === selectedBackground"
-                      (change)="selectBackground(bgImage)"
-                    />
-                    <img
-                      class="img-fluid"
-                      [src]="bgImage"
-                      (click)="selectBackground(bgImage)"
-                      [class.selected]="bgImage === selectedBackground"
-                    />
+                <!-- Conditionally display available background images horizontally -->
+                <ng-container *ngIf="!selectedBackground && !uploadedImage">
+                  <div class="col-2" *ngFor="let bgImage of backgroundImages">
+                    <div class="image-wrapper m-1">
+                      <input
+                        type="checkbox"
+                        class="image-checkbox"
+                        [checked]="bgImage === selectedBackground"
+                        (change)="selectBackground(bgImage)"
+                      />
+                      <img
+                        class="img-fluid"
+                        [src]="bgImage"
+                        (click)="selectBackground(bgImage)"
+                        [class.selected]="bgImage === selectedBackground"
+                      />
+                    </div>
                   </div>
-                </div>
+                </ng-container>
               </div>
             </div>
 
@@ -98,7 +109,7 @@
     </div>
 
     <div class="col-md-6">
-      <h3 class="text-warning">The Output will be shown here</h3>
+      <h3 class="outputtext">The Output will be shown here</h3>
       <div class="canvassection">
         <div class="output">
           <canvas class="img-fluid" #canvasElement></canvas>

@@ -65,6 +65,10 @@ export class ImageCreatorComponent {
     this.textInputs.push({ text: '', color: '#FFFF00', size: '16px' }); // Default color and size
   }
 
+  removeTextInput(index: number) {
+    this.textInputs.splice(index, 1);
+  }
+
   createImage() {  
     const imageSource = this.uploadedImage || this.selectedBackground;
     

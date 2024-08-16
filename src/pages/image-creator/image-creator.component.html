@@ -14,15 +14,18 @@
               {{ color.name }}
             </option>
           </select>
-          <select [(ngModel)]="input.size" class="form-control mb-3">
+          <select [(ngModel)]="input.size" class="form-control mb-1">
             <option *ngFor="let size of textSizes" [value]="size.value">
               {{ size.name }}
             </option>
           </select>
+          <button class="btn btn-danger" (click)="removeTextInput(i)">
+            Remove Text
+          </button>
         </div>
 
         <button class="btn btn-secondary mb-3" (click)="addTextInput()">
-          Add Text
+          <i class="bi bi-plus"></i> Add Text
         </button>
 
         <div class="background-images">

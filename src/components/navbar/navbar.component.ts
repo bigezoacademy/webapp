@@ -40,7 +40,7 @@ navigateToSignup(): void {
 navigateToLogin(): void {
   this.navigationService.navigateToLogin();
 }
-navigateToInspire(): void {
-  this.navigationService.navigateToInspire();
+navigateTocreate(): void {
+  this.navigationService.navigateTocreate();
 }
 }

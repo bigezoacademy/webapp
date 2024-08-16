@@ -44,7 +44,7 @@ export const routes: Routes = [
         component:AcademyComponent
     },
     {
-        path:'inspire',
+        path:'create',
         component:ImageCreatorComponent
     },
     {

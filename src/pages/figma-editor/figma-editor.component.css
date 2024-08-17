@@ -1,0 +1,26 @@
+.editor-container {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  cursor: move;
+  white-space: nowrap;
+  user-select: text;
+  direction: ltr; /* Ensure text is left-to-right */
+  text-align: left; /* Align text to the left */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls label {
+  margin-right: 10px;
+}

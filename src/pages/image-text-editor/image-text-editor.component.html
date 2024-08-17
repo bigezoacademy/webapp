@@ -1,0 +1,117 @@
+<h1 class="imagepagetitle">Write text on any image</h1>
+<p class="text-center m-0 bg-black text-secondary">Version 2.0</p>
+<div class="p-3 p-md-5 p-lg-5 text-center bg-black m-0">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image-creator">
+        <div *ngFor="let input of textInputs; let i = index" class="mb-3">
+          <textarea
+            class="form-control mb-1"
+            [(ngModel)]="input.text"
+            placeholder="Enter text here"></textarea>
+          <select [(ngModel)]="input.color" class="form-control mb-1">
+            <option value="" disabled selected>Choose text color</option>
+            <option *ngFor="let color of textColors" [value]="color.value">
+              {{ color.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.size" class="form-control mb-1">
+            <option value="" disabled selected>Choose text size</option>
+            <option *ngFor="let size of textSizes" [value]="size.value">
+              {{ size.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.font" class="form-control mb-1">
+            <option value="" disabled selected>Choose font</option>
+            <option *ngFor="let font of textFonts" [value]="font.value">
+              {{ font.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.fontWeight" class="form-control mb-1">
+            <option value="" disabled selected>Choose font weight</option>
+            <option *ngFor="let weight of fontWeights" [value]="weight.value">
+              {{ weight.name }}
+            </option>
+          </select>
+          <select [(ngModel)]="input.fontStyle" class="form-control mb-1">
+            <option value="" disabled selected>Choose font style</option>
+            <option *ngFor="let style of fontStyles" [value]="style.value">
+              {{ style.name }}
+            </option>
+          </select>
+          <button class="btn btn-danger" (click)="removeTextInput(i)">
+            Remove Text
+          </button>
+        </div>
+
+        <button class="btn btn-secondary mb-3" (click)="addTextInput()">
+          <i class="bi bi-plus"></i> Add Text
+        </button>
+
+        <div class="background-images">
+          <p class="text-center choosefile my-3">
+            <input
+              class="upload"
+              type="file"
+              (change)="onImageUpload($event)" />
+          </p>
+          <h3
+            class="p3 text-center text-secondary"
+            *ngIf="!selectedBackground && !uploadedImage">
+            Or Select Background
+          </h3>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <!-- Conditionally display available background images horizontally -->
+                <ng-container *ngIf="!selectedBackground && !uploadedImage">
+                  <div class="col-2" *ngFor="let bgImage of backgroundImages">
+                    <div class="image-wrapper m-1">
+                      <input
+                        type="checkbox"
+                        class="image-checkbox"
+                        [checked]="selectedBackground === bgImage"
+                        (change)="selectBackground(bgImage)" />
+                      <img [src]="bgImage" alt="Background Image" />
+                    </div>
+                  </div>
+                </ng-container>
+                <!-- Display selected or uploaded image -->
+                <div *ngIf="selectedBackground || uploadedImage">
+                  <div class="col-12">
+                    <div class="image-wrapper mt-3">
+                      <img
+                        [src]="uploadedImage || selectedBackground"
+                        alt="Selected Image" />
+                    </div>
+                    <button
+                      class="btn btn-danger mt-3"
+                      (click)="deselectImage()">
+                      Deselect Image
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            *ngIf="selectedBackground || uploadedImage"
+            class="btn btn-primary mt-3"
+            (click)="createImage()">
+            <i class="bi bi-image"></i> Create Image
+          </button>
+
+          <div *ngIf="imageDataUrl" class="mt-3">
+            <h3 class="text-secondary">Preview</h3>
+            <canvas #canvasElement class="d-none"></canvas>
+            <img [src]="imageDataUrl" class="img-fluid" />
+            <button class="btn btn-success mt-3" (click)="downloadImage()">
+              <i class="bi bi-download"></i> Download Image
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

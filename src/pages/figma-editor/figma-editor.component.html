@@ -1,0 +1,69 @@
+<h2 class="p-3 text-center">Write Text on any image</h2>
+<div class="editor-container mb-5 text-center">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <input
+        class="btn m-1 btn-secondary"
+        type="file"
+        (change)="onImageUpload($event)" />
+      <button class="btn m-1 btn-success" (click)="createNewTextLayer()">
+        Create New Text <i class="bi bi-fonts"></i>
+      </button>
+      <button class="btn m-1 btn-dark" (click)="downloadImage()">
+        Download Image <i class="bi bi-arrow-down"></i>
+      </button>
+
+      <div class="controls mb-2" *ngIf="selectedTextLayer !== null">
+        <label
+          >Font Size:
+          <input
+            type="number"
+            [(ngModel)]="textLayers[selectedTextLayer].fontSize" />
+        </label>
+        <label
+          >Font Family:
+          <select [(ngModel)]="textLayers[selectedTextLayer].fontFamily">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+        </label>
+        <label
+          >Color:
+          <input
+            type="color"
+            [(ngModel)]="textLayers[selectedTextLayer].color" />
+        </label>
+      </div>
+
+      <div class="image-container" *ngIf="imageUrl">
+        <img [src]="imageUrl" alt="Uploaded Image" class="img-fluid" />
+
+        <div
+          *ngFor="let textLayer of textLayers; let i = index"
+          class="text-overlay"
+          [ngStyle]="{
+            top: textLayer.position.top + 'px',
+            left: textLayer.position.left + 'px',
+            fontSize: textLayer.fontSize + 'px',
+            fontFamily: textLayer.fontFamily,
+            color: textLayer.color
+          }"
+          contenteditable="true"
+          (mousedown)="startDrag($event, i)"
+          (mouseup)="stopDrag()"
+          (touchstart)="startDrag($event, i)"
+          (touchend)="stopDrag()"
+          (input)="onTextInput($event, i)">
+          {{ textLayer.text }}
+        </div>
+      </div>
+
+      <canvas #imageCanvas style="display: none"></canvas>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

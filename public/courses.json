@@ -6,7 +6,7 @@
       "Description": "Learn the fundamentals of graphic design.",
       "Price": "USD 70",
       "PriceUgx": "UGX 250,000",
-      "ClassTime": "6:30PM-7:45PM EAT",
+      "ClassTime": "1 Hr/ classDay",
       "Duration": "4 weeks",
       "Image": "images/courseimages/graphic.png",
       "Thumbnail": "images/graphic.png",
@@ -41,7 +41,7 @@
       "Image": "images/courseimages/google.png",
       "Thumbnail": "images/google.png",
       "Max": "50 Students",
-      "ClassDays": ["Monday","Tuesday","Thursday","Friday"],
+      "ClassDays": ["Tuesday","Thursday","Friday"],
      "Next": "Every new Month",
       "Topics": [
         "Preparing a Professional report in Google Docs from scratch, using Automatic Table of contents, page numbers, references, images, etc.",
@@ -58,35 +58,7 @@
         "Some useful AI tools & Plugins",
         "QUESTION & ANSWER sessions"
       ]
-    },
-    {
-      "CourseId": 3,
-      "Title": "Website Design & Development",
-      "Description": "Create stunning and responsive websites.",
-      "Price": "USD 210",
-      "PriceUgx": "UGX 800,000",
-      "ClassTime": "8AM-9:30AM EAT",
-      "Duration": "2 Months",
-      "Image": "images/courseimages/web.png",
-      "Thumbnail": "images/website.png",
-      "Max": "20 Students",
-      "ClassDays": ["Monday-Friday"],
-    "Next": "FEB, APR, JUN, AUG, OCT",
-      "Topics": [
-        "Understanding the basics of web development",
-        "HTML syntax and structure",
-        "Working with HTML tags and elements",
-        "Creating forms and handling user input",
-        "Basics of CSS for styling web pages",
-        "Selectors and properties",
-        "Responsive design and media queries",
-        "JavaScript Basics",
-        "CSS Frameworks (bootstrap, tailwind, etc.)",
-        "Building a Website using a CMS (e.g. Wordpress)",
-        "Basics of web hosting and domains",
-        "Final Project",
-        "Introduction to Back-end Development"
-      ]
     }
+  
   ]
 }

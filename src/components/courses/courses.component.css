@@ -22,3 +22,18 @@ td {
 .text-uppercase {
   text-transform: uppercase;
 }
+.coursetitle {
+  font-size: 30px;
+  padding: 5px 10px;
+  background-color: #ffe0e0;
+}
+.cost {
+  font-size: 30px;
+}
+.cost i {
+  font-weight: normal;
+}
+.ugx {
+  font-size: 20px;
+  font-style: normal;
+}

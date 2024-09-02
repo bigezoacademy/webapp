@@ -13,12 +13,13 @@ import { Router } from '@angular/router';
 export class CoursesComponent implements OnInit {
   courses: any[] = [];
 
-  private jsonUrl = '/courses.json';
+  private apiUrl = '/courses.json';
+  private  jsonUrl= 'http://localhost:8081/courses/all';
 
   constructor(private http: HttpClient,private router: Router) {}
 
   ngOnInit(): void {
-    this.http.get(this.jsonUrl).subscribe((res: any) => {
+    this.http.get(this.apiUrl).subscribe((res: any) => {
       this.courses = res.courses; // Adjusted to match the JSON structure
     });
   }

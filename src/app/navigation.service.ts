@@ -22,6 +22,7 @@ export class NavigationService {
   navigateToSignup(): void {
     this.router.navigate(['/signup']);
   }
+ 
   navigateToLogin(): void {
     this.router.navigate(['/login']);
   }

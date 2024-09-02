@@ -45,6 +45,7 @@ export const routes: Routes = [
         path:'academy',
         component:AcademyComponent
     },
+  
     {
         path:'create',
         component: FigmaEditor

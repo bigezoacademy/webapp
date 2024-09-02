@@ -3,7 +3,7 @@
     {
       "CourseId": 1,
       "Title": "Graphic Design  (Basic to Pro)",
-      "Description": "Learn the fundamentals of graphic design.",
+      "Description": "Learn the fundamentals of graphic design using Free Modern AI-Powered Tools.",
       "Price": "USD 70",
       "PriceUgx": "UGX 250,000",
       "ClassTime": "1 Hr/ classDay",
@@ -11,7 +11,7 @@
       "Image": "images/courseimages/graphic.png",
       "Thumbnail": "images/graphic.png",
       "Max": "30 Students",
-     "ClassDays": ["Mon, Tue, Thur, Fri"],
+     "ClassDays": ["Tue, Thur, Fri"],
       "Next": "Every new Month",
       "Topics": [
         "Introduction to Graphic Design Principles",

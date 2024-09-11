@@ -32,4 +32,7 @@ export class NavigationService {
   navigateTocreate(): void {
     this.router.navigate(['/create']);
   }
+  navigateToDrills():void{
+    this.router.navigate(['/drills']);
+  }
 }

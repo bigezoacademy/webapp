@@ -47,12 +47,7 @@ body {
 .btn {
   cursor: pointer;
 }
-.typing {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .image-wrapper img {
   max-width: 200px !important;
 }

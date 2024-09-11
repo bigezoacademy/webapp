@@ -3,7 +3,7 @@
     {
       "CourseId": 1,
       "Title": "Graphic Design  (Basic to Pro)",
-      "Description": "Learn the fundamentals of graphic design using Free Modern AI-Powered Tools.",
+      "Description": "Learn the fundamentals of graphic design using Free Modern AI-Powered Tools. Learn how to use Figma and Canva like a Pro.",
       "Price": "USD 70",
       "PriceUgx": "UGX 250,000",
       "ClassTime": "1 Hr/ classDay",
@@ -15,17 +15,17 @@
       "Next": "Every new Month",
       "Topics": [
         "Introduction to Graphic Design Principles",
-        "Adobe Illustrator Basics (interface, tools)",
-        "Creating vector graphics in Illustrator",
-        "Adobe Photoshop Basics (interface, tools)",
+       "Using Online graphic design tools (Canva & Figma)",       
+       "Using Text in Canva and Figma",       
+       "Using Images in Canva and Figma",
         "Photo editing and manipulation",
         "Techniques of Changing photo backgrounds",
-        "Using Online graphic design tools (Canva & Figma)",
         "Creating fliers (Marketing Campaigns/ Advertisement)",
-        "Logo Design in Illustrator and other platforms",
+        "Logo Design",
         "Design dimensioning & resolution",
         "Exporting graphics for print/social media (settings)",
         "Creating a company profile",
+        "Designing a magazine",
         "Designing with AI",
         "Final design project(s)"
       ]

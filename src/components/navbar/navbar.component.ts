@@ -43,5 +43,8 @@ navigateToLogin(): void {
 navigateTocreate(): void {
   this.navigationService.navigateTocreate();
 }
+navigateToDrills():void{
+  this.navigationService.navigateToDrills();
+}
 
 }

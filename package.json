@@ -20,6 +20,7 @@
     "@angular/router": "^18.0.0",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "@sweetalert2/ngx-sweetalert2": "^12.4.0",
+    "bigezo-web-app": "file:",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "html2canvas": "^1.4.1",

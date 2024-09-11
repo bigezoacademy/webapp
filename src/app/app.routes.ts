@@ -12,6 +12,7 @@ import { ReceiptmakerComponent } from '../pages/receiptmaker/receiptmaker.compon
 import { ImageCreatorComponent } from '../pages/image-creator/image-creator.component';
 import { ImageTextEditorComponent } from '../pages/image-text-editor/image-text-editor.component';
 import { FigmaEditor } from '../pages/figma-editor/figma-editor.component';
+import { DrillsComponent } from '../pages/drills/drills.component';
 
 
 export const routes: Routes = [
@@ -36,6 +37,10 @@ export const routes: Routes = [
     {
         path:'signup',
         component:SignupComponent
+    },
+    {
+        path:'drills',
+        component:DrillsComponent
     },
     {
         path:'cardgenerator',

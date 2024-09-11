@@ -10,7 +10,7 @@ ul {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: #ff5e14;
+  color: #ff1414;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -96,7 +96,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #ff1414;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -105,7 +105,7 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover {
-  color: #ff5e14;
+  color: #ff1414;
 }
 .footer-widget ul li a {
   color: #878787;
@@ -125,9 +125,9 @@ ul {
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: #ff5e14;
+  background: #ff1414;
   padding: 13px 20px;
-  border: 1px solid #ff5e14;
+  border: 1px solid #ff1414;
   top: 0;
 }
 .subscribe-form button i {
@@ -145,14 +145,14 @@ ul {
   color: #878787;
 }
 .copyright-text p a {
-  color: #ff5e14;
+  color: #ff1414;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a {
-  color: #ff5e14;
+  color: #ff1414;
 }
 .footer-menu li a {
   font-size: 14px;

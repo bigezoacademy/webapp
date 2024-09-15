@@ -25,7 +25,7 @@ td {
 .coursetitle {
   font-size: 30px;
   padding: 5px 10px;
-  background-color: #ffe0e0;
+  background-color: #dddddd;
 }
 .cost {
   font-size: 30px;
@@ -36,4 +36,6 @@ td {
 .ugx {
   font-size: 20px;
   font-style: normal;
+  color: rgb(0, 61, 153);
+  font-weight: bold;
 }

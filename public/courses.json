@@ -32,11 +32,11 @@
     },
     {
       "CourseId": 2,
-      "Title": "Google Tools (Basic to Pro)",
-      "Description": "Master Google tools for productivity and collaboration.",
-      "Price": "USD 30",
-      "PriceUgx": "UGX 100,000",
-      "ClassTime": "8:00 PM - 9:00 PM EAT",
+      "Title": "Google Docs (Basic to Pro)",
+      "Description": "Master Google Docs for better productivity.",
+      "Price": "USD 15",
+      "PriceUgx": "UGX 50,000",
+      "ClassTime": "4:00 PM - 5:00 PM EAT",
       "Duration": "2 weeks",
       "Image": "images/courseimages/google.png",
       "Thumbnail": "images/google.png",
@@ -44,21 +44,49 @@
       "ClassDays": ["Tuesday","Thursday","Friday"],
      "Next": "Every new Month",
       "Topics": [
-        "Preparing a Professional report in Google Docs from scratch, using Automatic Table of contents, page numbers, references, images, etc.",
-        "Practical Comparison between Google Docs & MS Word.",
-        "Simple functions in Google Sheets (Sum, Average, Multiply, ...)",
-        "Practical comparison between Google Sheets & MS Excel.",
-        "Preparing a professional presentation using Google Slides.",
-        "Practical Comparison between Google Slides & MS Powerpoint.",
-        "Using Google Drive to backup/store your important files.",
-        "How to create professional email signatures using GMAIL.",
-        "How to secure your emails from hackers - Best practices.",
-        "How to use templates. - Create resumes, CV, etc.",
-        "The Best Way to send large files via email (+other alternatives).",
+        "Introduction to the user interface",        
         "Some useful AI tools & Plugins",
+        "Preparing a Professional report in Google Docs from scratch",        
+        "Creating & using Text presets",
+        "Creating Automatic Table of contents",
+        "Creating page numbers",
+        "Working with images",
+        "Creating refences & bibliography",
+        "Practical Comparison between Google Docs & MS Word.",
+        "Using Google Drive to backup/store your important files.",
+        "How to use templates. - Create resumes, CV, etc.",        
+        "Using offline mode",
+        "Sharing Google doc files",
         "QUESTION & ANSWER sessions"
       ]
+    },
+    {
+      "CourseId": 3,
+      "Title": "GMAIL (Basic to Pro)",
+      "Description": "Master GMail for maximum productivity using emails.",
+      "Price": "USD 15",
+      "PriceUgx": "UGX 50,000",
+      "ClassTime": "3:00 PM - 4:00 PM EAT",
+      "Duration": "2 weeks",
+      "Image": "images/courseimages/gmail.png",
+      "Thumbnail": "images/gmail.png",
+      "Max": "50 Students",
+      "ClassDays": ["Tuesday","Thursday","Friday"],
+     "Next": "Every new Month",
+      "Topics": [
+        "How to create a gmail account",
+        "How to create professional email signatures using GMAIL.",
+        "Storing passwords in your gmail account",
+        "The Best Way to send large files via email (+other alternatives).",
+        "Some useful AI tools & Plugins",  
+        "Handling SPAM messages",
+        "Solving 'email is full' situation",
+        "Using email filters",      
+        "How to secure your emails from hackers - Best practices.",
+        "Change gmail themes"
+      ]
     }
+  
   
   ]
 }

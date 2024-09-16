@@ -69,7 +69,7 @@ export class CourseDetailsComponent implements OnInit {
   }
 
   goBack() {
-    window.location.href = '/academy';
+    window.location.href = '/';
   }
 
   getTitleClass(courseId: number): string {

@@ -1,21 +1,26 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CoursesComponent } from "../../components/courses/courses.component";
 import Swal from 'sweetalert2';
-import { TestimonialComponent } from "../../components/testimonial/testimonial.component";
 import { TypingAnimationService } from './typing-animation.service';
+import { NavigationService } from '../../app/navigation.service';
+import { TestimoniesComponent } from '../testimonies/testimonies.component';
 
 @Component({
-  selector: 'app-academy',
+  selector: 'app-tutor',
   standalone: true,
-  templateUrl: './academy.component.html',
-  styleUrls: ['./academy.component.css'],
-  imports: [CoursesComponent, TestimonialComponent]
+  templateUrl: './tutor.component.html',
+  styleUrls: ['./tutor.component.css'],
+  imports: [CoursesComponent, TestimoniesComponent]
 })
-export class AcademyComponent implements OnInit, OnDestroy {
+export class TutorComponent implements OnInit, OnDestroy {
   typingText: string = '';
   private intervalId: any;
 
-  constructor(private typingAnimationService: TypingAnimationService) {}
+  constructor(private typingAnimationService: TypingAnimationService,private navigationService:NavigationService) {}
+ 
+navigateToHome(): void {
+  this.navigationService.navigateToHome();
+}
 
   ngOnInit(): void {
     this.startTypingAnimation();

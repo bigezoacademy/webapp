@@ -10,7 +10,8 @@
       "Duration": "4 weeks",
       "Image": "images/courseimages/graphic.png",
       "Thumbnail": "images/graphic.png",
-      "Max": "30 Students",
+      "Max": "50 Students/ Month",
+      "Preview": "",
      "ClassDays": ["Tue, Thur, Fri"],
       "Next": "Every new Month",
       "Topics": [
@@ -40,7 +41,8 @@
       "Duration": "2 weeks",
       "Image": "images/courseimages/google.png",
       "Thumbnail": "images/google.png",
-      "Max": "50 Students",
+      "Max": "100 Students/month",
+      "Preview": "",
       "ClassDays": ["Tuesday","Thursday","Friday"],
      "Next": "Every new Month",
       "Topics": [
@@ -70,7 +72,8 @@
       "Duration": "2 weeks",
       "Image": "images/courseimages/gmail.png",
       "Thumbnail": "images/gmail.png",
-      "Max": "50 Students",
+      "Max": "100 Students",
+      "Preview": "",
       "ClassDays": ["Tuesday","Thursday","Friday"],
      "Next": "Every new Month",
       "Topics": [

@@ -3,7 +3,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "../components/navbar/navbar.component";
 import { HeadingComponent } from "../components/heading/heading.component";
 import { SubtitleComponent } from "../components/subtitle/subtitle.component";
-import { AcademyComponent } from "../pages/academy/academy.component";
+import { TutorComponent } from "../pages/tutor/tutor.component";
 import { HomeComponent } from "../pages/home/home.component";
 import { LoginComponent } from '../pages/login/login.component';
 import { SignupComponent } from '../pages/signup/signup.component';
@@ -22,8 +22,8 @@ import { ImageCreatorComponent } from '../pages/image-creator/image-creator.comp
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavbarComponent, HeadingComponent, SubtitleComponent, AcademyComponent, HomeComponent, LoginComponent, SignupComponent,
-        RouterModule, CommonModule, CoursesComponent, CourseDetailsComponent, FooterComponent,ImageCreatorComponent,HttpClientModule]
+    imports: [RouterOutlet, NavbarComponent, HeadingComponent, SubtitleComponent, TutorComponent, HomeComponent, LoginComponent, SignupComponent,
+        RouterModule, CommonModule, CoursesComponent, CourseDetailsComponent, FooterComponent,ImageCreatorComponent]
 })
 export class AppComponent {
   title = 'bigezo-web-app';

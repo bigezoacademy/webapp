@@ -18,8 +18,8 @@ navigateToHome(): void {
   this.navigationService.navigateToHome();
 }
 
-navigateToAcademy(): void {
-  this.navigationService.navigateToAcademy();
+navigateToTutor(): void {
+  this.navigationService.navigateToTutor();
 }
 
 navigateToCard(): void {
@@ -45,6 +45,9 @@ navigateTocreate(): void {
 }
 navigateToDrills():void{
   this.navigationService.navigateToDrills();
+}
+navigateToTestimonies():void{
+  this.navigationService.navigateToTestimonies();
 }
 
 }

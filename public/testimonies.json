@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "Id": 1,
+      "Name": "Dr. Bruno K.",
+      "Image": "images/students/bruno.jpg",
+      "Description": "It is a great feeling when I can imagine a design and at the same time able to bring it to a reality!. I liked the fact that Tutor Alfred taught us from first principles and in a 'tell, show, do, apply' manner.",
+      "Profession": "Professional Dentist",      
+      "Location": "Nakasero Hospital",
+      "Year": "2023"
+
+    },
+    {
+      "Id": 2,
+      "Name": "Ruth Birungi",
+      "Image": "images/students/ruth.jpg",
+      "Description": "  The opportunity to learn graphic designing was a beautiful way to start my year. Am always excited about creating something new, something I thought was hard, now am able to do. The class has as well challenged my way of life. Am now more committed and diligent to tasks. Also as a medic am glad that I won't have to look at patients all the time.",
+      "Profession": "Student",
+      "Location": "Jinja",
+      "Year": "2024"
+
+    },
+    {
+      "Id": 3,
+      "Name": "Dr. Edward .K",
+      "Image": "images/students/edward.jpg",
+      "Description": "Your unwavering dedication, expertise, and creative guidance have been instrumental in nurturing my design skills and I am so proud to say that the concepts in my mind can now be put into existence. Your ability to explain complex concepts in a clear and engaging manner, making each class a source of inspiration.",
+      "Profession": "CEO - Routine Dental",
+      "Location": "Kampala",
+      "Year": "2023"
+
+    },
+   
+    {
+      "Id": 4,
+      "Name": "Rosanne",
+      "Image": "images/students/rosanne.jpg",
+      "Description": "This class was a wonderful opportunity and very helpful. I learnt alot and believe i will benefit alot from the knowledge acquired.",
+      "Profession": "Student",
+      "Location": "Kampala",
+      "Year": "2024"
+
+    },
+    {
+      "Id": 5,
+      "Name": "Noel A. Dagi",
+      "Image": "images/students/noel.jpg",
+      "Description": "The graphics design course is one of my answered prayers in 2024 , for long I have been struggling to create flyers and edit photos using my phone apps that turns to be so hectic and poor quality. The course has been so smooth because teacher Alfred delivered the content in the  simplest way possible to understand and grasp.",
+      "Profession": "Agricultural Scientist",
+      "Location": "Ggulu",
+      "Year": "2024"
+
+    }
+   
+  
+  
+  ]
+}

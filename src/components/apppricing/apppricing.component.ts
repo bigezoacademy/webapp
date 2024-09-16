@@ -45,7 +45,7 @@ getPremium(PREMIUM_APP: string): void {
         <div class="mt-3">
           <p class="text-center d-none">OR</p>
           <a href="https://api.whatsapp.com/send?phone=+256773913902&text=Hello%20Bigezo!" class="btn btn-success m-2">Order via Whatsapp</a>
-          <a href="mailto:bigezoacademy@gmail.com" target="_blank" class="btn btn-danger m-2">Order via Email</a>
+          <a href="mailto:bigezotutor@gmail.com" target="_blank" class="btn btn-danger m-2">Order via Email</a>
         </div>
       </div>
     `,

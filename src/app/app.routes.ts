@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../pages/login/login.component';
 import { LayoutComponent } from '../pages/layout/layout.component';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-import { AcademyComponent } from '../pages/academy/academy.component';
+import { TutorComponent } from '../pages/tutor/tutor.component';
 import { HomeComponent } from '../pages/home/home.component';
 import { SignupComponent } from '../pages/signup/signup.component';
 import { CourseDetailsComponent } from '../pages/course-details/course-details.component';
@@ -13,6 +13,7 @@ import { ImageCreatorComponent } from '../pages/image-creator/image-creator.comp
 import { ImageTextEditorComponent } from '../pages/image-text-editor/image-text-editor.component';
 import { FigmaEditor } from '../pages/figma-editor/figma-editor.component';
 import { DrillsComponent } from '../pages/drills/drills.component';
+import { TestimoniesComponent } from '../pages/testimonies/testimonies.component';
 
 
 export const routes: Routes = [
@@ -43,12 +44,12 @@ export const routes: Routes = [
         component:DrillsComponent
     },
     {
-        path:'cardgenerator',
-        component:CardgeneratorComponent
+        path:'testimonies',
+        component:TestimoniesComponent
     },
     {
-        path:'academy',
-        component:AcademyComponent
+        path:'tutor',
+        component:TutorComponent
     },
   
     {
@@ -60,7 +61,7 @@ export const routes: Routes = [
       component:LayoutComponent,
       children:[
        { path:'',
-        component:DashboardComponent
+        component:HomeComponent
        }
       ]  
     }

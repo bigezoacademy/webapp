@@ -32,9 +32,9 @@ export class FooterComponent {
           <h1 class="text-center text-danger display-1">
             <i class="bi bi-envelope"></i>
           </h1>
-          <p class="text-center">bigezoacademy@gmail.com</p>
+          <p class="text-center">bigezotutor@gmail.com</p>
           <p class="text-center">
-           <a href="mailto:bigezoacademy@gmail.com" class="btn btn-danger">Send me a message</a>
+           <a href="mailto:bigezotutor@gmail.com" class="btn btn-danger">Send me a message</a>
           </p>
         </div>
       `,

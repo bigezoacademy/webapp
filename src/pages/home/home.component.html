@@ -1,102 +1,18 @@
-<div class="text-danger text-center py-1 homecover text-light">
-  <h1>
-    <img src="images/bigezologo.png" class="img-fluid" alt="" srcset="" />
-  </h1>
-  <p class="text-white h6 p-3 typing">
-    <span class="">{{ typingText }}</span>
-  </p>
-</div>
-<!----------<h4 class="text-center p-3 bg-danger text-light"></h4>---------->
-
-<div class="container">
-  <div class="row d-none">
-    <div class="col-md-4">
-      <div class="p-3">
-        <a (click)="navigateToAcademy()">
-          <p class="text-center product">
-            <a (click)="navigateToAcademy()" class="btn btn-lg"
-              ><i class="bi bi-mortarboard-fill"></i><br />
-              ACADEMY</a
-            ><br />
-
-            <a (click)="navigateToAcademy()" class="btn-dark btn">
-              See Courses
-            </a>
-          </p>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="p-3">
-        <a (click)="navigateToReceipt()">
-          <p class="text-center product">
-            <a (click)="navigateToReceipt()" class="btn btn-lg"
-              ><i class="bi bi-android"></i><br />
-              RECEIPT MAKER APP</a
-            ><br />
-
-            <a (click)="navigateToReceipt()" class="btn-danger btn">
-              See Features
-            </a>
-          </p></a
-        >
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="p-3">
-        <a (click)="navigateToCard()">
-          <p class="text-center product">
-            <a (click)="navigateToCard()" class="btn btn-lg"
-              ><i class="bi bi-windows"></i><br />
-              <span class="text-primary">FREE </span> CARD GENERATOR</a
-            ><br />
-
-            <a (click)="navigateToCard()" class="btn-dark btn">
-              See Features
-            </a>
-          </p></a
-        >
-      </div>
-    </div>
-    <div class="col-md-4 d-none">
-      <div class="p-3">
-        <a href="">
-          <p class="text-center product">
-            <a href="" class="btn btn-lg"
-              ><i class="bi bi-database-fill-lock"></i><br />
-              SCHOOL PORTAL</a
-            >
-            <br />
-            <a href="" class="btn-dark btn"> LOGIN </a>
-          </p></a
-        >
-      </div>
-    </div>
-    <div class="col-md-4 d-none">
-      <div class="p-3">
-        <a href="">
-          <p class="text-center product">
-            <a href="" class="btn btn-lg"
-              ><i class="bi bi-code-slash"></i><br />
-              WEB DESIGN</a
-            >
-            <br />
-            <a href="" class="btn-dark btn"> See Prices </a>
-          </p>
-        </a>
-      </div>
-    </div>
+<h1 class="p-3 text-center typing py-5">
+  {{ typingText }}
+</h1>
+<div class="row mb-5">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 row">
+    <h1 class="text-center">
+      <button class="btn btn-primary m-1" (click)="navigateToTestimonies()">
+        See Testimonies
+      </button>
+      <button class="btn btn-dark m-1" (click)="navigateToTutor()">
+        About the tutor
+      </button>
+    </h1>
   </div>
-  <div class="row">
-    <h1 class="display-1 p-3 text-center pb-0">CONVENIENT</h1>
-    <h2 class="text-danger p-3 text-center pt-0">LEARNING</h2>
-    <p class="text-center mb-5 mt-0">
-      <a (click)="navigateToAcademy()" class="btn-lg btn-primary btn">
-        See Courses
-      </a>
-    </p>
-  </div>
+  <div class="col-md-2"></div>
 </div>
-<div class="m-0 d-none">
-  <img src="images/bg.jpg" class="img-fluid" alt="" srcset="" />
-</div>
+<app-courses></app-courses>

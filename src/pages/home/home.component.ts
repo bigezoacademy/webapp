@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { CoursesComponent } from "../../components/courses/courses.component";
 import { NavigationService } from '../../app/navigation.service';
 import { TypingAnimationService } from './typing-animation.service';
@@ -11,29 +11,18 @@ import { TypingAnimationService } from './typing-animation.service';
     styleUrls: ['./home.component.css'],
     imports: [CoursesComponent]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
     typingText: string = '';
     private intervalId: any;
   
     constructor(private navigationService:NavigationService,private typingAnimationService: TypingAnimationService) {}
   
-    ngOnInit(): void {
-      this.startTypingAnimation();
-    }
-  
-    ngOnDestroy(): void {
-      clearInterval(this.intervalId);
-    }
-  
-    startTypingAnimation(): void {
-      this.intervalId = setInterval(() => {
-        this.typingAnimationService.updateText();
-        this.typingText = this.typingAnimationService.getCurrentText();
-      }, 300); // Adjust typing speed here
-    }
+ngOnInit(): void {
+    this.startTypingAnimation();
+}
 
-navigateToAcademy(){
-   this.navigationService.navigateToAcademy(); 
+navigateToTutor(){
+   this.navigationService.navigateToTutor(); 
 }
 navigateToSms(){
     this.navigationService.navigateToSms(); 
@@ -43,5 +32,14 @@ navigateToSms(){
 }
 navigateToReceipt(){
   this.navigationService.navigateToReceipt(); 
+}
+navigateToTestimonies(){
+  this.navigationService.navigateToTestimonies(); 
+}
+startTypingAnimation(): void {
+  this.intervalId = setInterval(() => {
+    this.typingAnimationService.updateText();
+    this.typingText = this.typingAnimationService.getCurrentText();
+  }, 1000); // Adjust typing speed here
 }
 }

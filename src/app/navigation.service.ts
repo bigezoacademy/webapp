@@ -10,8 +10,8 @@ export class NavigationService {
   navigateToHome(): void {
     this.router.navigate(['/']);
   }
-  navigateToAcademy(): void {
-    this.router.navigate(['/academy']);
+  navigateToTutor(): void {
+    this.router.navigate(['/tutor']);
   }
   navigateToCard(): void {
     this.router.navigate(['/cardgenerator']);
@@ -34,5 +34,8 @@ export class NavigationService {
   }
   navigateToDrills():void{
     this.router.navigate(['/drills']);
+  }
+  navigateToTestimonies():void{
+    this.router.navigate(['/testimonies']);
   }
 }

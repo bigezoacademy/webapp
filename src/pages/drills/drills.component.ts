@@ -11,7 +11,7 @@ export class DrillsComponent {
 
 
 whatsappme():void{
-  window.location.href="https://chat.whatsapp.com/LH9XMFziB9o1R3RH9RYGHf";
+  window.location.href="https://chat.whatsapp.com/EQYINzv0zD8Ic06NhMpBun";
 }
  
 }

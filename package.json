@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
+    "@supabase/supabase-js": "^2.45.4",
     "@sweetalert2/ngx-sweetalert2": "^12.4.0",
     "bigezo-web-app": "file:",
     "bootstrap": "^5.3.3",

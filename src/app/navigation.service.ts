@@ -13,6 +13,9 @@ export class NavigationService {
   navigateToTutor(): void {
     this.router.navigate(['/tutor']);
   }
+  navigateToBooks(): void {
+    this.router.navigate(['/books']);
+  }
   navigateToCard(): void {
     this.router.navigate(['/cardgenerator']);
   }

@@ -13,6 +13,7 @@ import { CoursesComponent } from '../components/courses/courses.component';
 import { CourseDetailsComponent } from '../pages/course-details/course-details.component';
 import { FooterComponent } from "../components/footer/footer.component";
 import { ImageCreatorComponent } from '../pages/image-creator/image-creator.component';
+import { BooksComponent } from './books/books.component';
 
 
 
@@ -23,7 +24,7 @@ import { ImageCreatorComponent } from '../pages/image-creator/image-creator.comp
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [RouterOutlet, NavbarComponent, HeadingComponent, SubtitleComponent, TutorComponent, HomeComponent, LoginComponent, SignupComponent,
-        RouterModule, CommonModule, CoursesComponent, CourseDetailsComponent, FooterComponent,ImageCreatorComponent]
+        RouterModule, CommonModule, CoursesComponent, CourseDetailsComponent, FooterComponent,ImageCreatorComponent,BooksComponent]
 })
 export class AppComponent {
   title = 'bigezo-web-app';

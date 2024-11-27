@@ -1,6 +1,6 @@
 <h5 class="text-center mt-3" *ngIf="showCourse">
   <span> Course Details </span>
-  <a (click)="goBack()" class="back-link ms-5"
+  <a (click)="goBack()" class="btn btn-dark ms-5"
     ><i class="bi bi-arrow-left"></i> Other Courses</a
   >
 </h5>
@@ -14,8 +14,7 @@
     <div class="col-md-6 p-3 pt-0">
       <h1
         [ngClass]="getTitleClass(course.CourseId)"
-        class="fw-bold title-purple"
-      >
+        class="fw-bold title-purple">
         {{ course.Title }}
       </h1>
       <p class="text-right my-1" *ngIf="!showSuccess">
@@ -133,8 +132,7 @@
             placeholder="{{ course.Title }}"
             required
             [(ngModel)]="formData.title"
-            #title="ngModel"
-          />
+            #title="ngModel" />
         </div>
         <div class="input-group">
           <input
@@ -143,12 +141,10 @@
             required
             name="name"
             [(ngModel)]="formData.name"
-            #name="ngModel"
-          />
+            #name="ngModel" />
           <div
             *ngIf="name.invalid && (name.dirty || name.touched)"
-            class="text-danger mx-auto"
-          >
+            class="text-danger mx-auto">
             Name is required.
           </div>
         </div>
@@ -159,12 +155,10 @@
             required
             name="phone"
             [(ngModel)]="formData.phone"
-            #phone="ngModel"
-          />
+            #phone="ngModel" />
           <div
             *ngIf="phone.invalid && (phone.dirty || phone.touched)"
-            class="text-danger mx-auto"
-          >
+            class="text-danger mx-auto">
             Phone is required.
           </div>
         </div>
@@ -175,12 +169,10 @@
             placeholder="Email"
             required
             [(ngModel)]="formData.email"
-            #email="ngModel"
-          />
+            #email="ngModel" />
           <div
             *ngIf="email.invalid && (email.dirty || email.touched)"
-            class="text-danger mx-auto"
-          >
+            class="text-danger mx-auto">
             Enter a valid email.
           </div>
         </div>
@@ -194,8 +186,7 @@
             type="text"
             name="price"
             placeholder="USD {{ course.Price }}"
-            [(ngModel)]="formData.price"
-          />
+            [(ngModel)]="formData.price" />
         </div>
         <div class="input-group">
           <input
@@ -204,12 +195,10 @@
             placeholder="Country"
             required
             [(ngModel)]="formData.country"
-            #country="ngModel"
-          />
+            #country="ngModel" />
           <div
             *ngIf="country.invalid && (country.dirty || country.touched)"
-            class="text-danger mx-auto"
-          >
+            class="text-danger mx-auto">
             Country is required.
           </div>
         </div>
@@ -218,8 +207,7 @@
             name="course_month"
             required
             [(ngModel)]="formData.course_month"
-            #course_month="ngModel"
-          >
+            #course_month="ngModel">
             <option value="">Starting Month</option>
             <option value="January">January</option>
             <option value="February">February</option>
@@ -239,8 +227,7 @@
               course_month.invalid &&
               (course_month.dirty || course_month.touched)
             "
-            class="text-danger mx-auto"
-          >
+            class="text-danger mx-auto">
             Starting month is required.
           </div>
         </div>
@@ -250,14 +237,12 @@
             type="text"
             name="date"
             required
-            [(ngModel)]="formData.date"
-          />
+            [(ngModel)]="formData.date" />
         </div>
         <button
           type="submit"
           class="btn btn-primary px-5"
-          [disabled]="isSubmitting"
-        >
+          [disabled]="isSubmitting">
           Submit Application
         </button>
         <div class="my-3">

@@ -161,6 +161,7 @@ export class CourseDetailsComponent implements OnInit {
       icon: "error",
       title: "Oops...",
       text: "Please fill in all fields",
+      allowOutsideClick: false,
       footer: '<a href="#">Also select a month?</a>'
     });
   }
@@ -170,6 +171,7 @@ export class CourseDetailsComponent implements OnInit {
       icon: "error",
       title: "Oops...",
       text: "Check your internet connection",
+      allowOutsideClick: false,
       footer: '<a href="#">Make sure all fields are filled</a>'
     });
   }

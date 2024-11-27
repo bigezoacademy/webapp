@@ -30,66 +30,7 @@
         "Designing with AI",
         "Final design project(s)"
       ]
-    },
-    {
-      "CourseId": 2,
-      "Title": "Google Docs (Basic to Pro)",
-      "Description": "Master Google Docs for better productivity.",
-      "Price": "USD 15",
-      "PriceUgx": "UGX 50,000",
-      "ClassTime": "4:00 PM - 5:00 PM EAT",
-      "Duration": "2 weeks",
-      "Image": "images/courseimages/google.png",
-      "Thumbnail": "images/google.png",
-      "Max": "100 Students/month",
-      "Preview": "",
-      "ClassDays": ["Tuesday","Thursday","Friday"],
-     "Next": "Every new Month",
-      "Topics": [
-        "Introduction to the user interface",        
-        "Some useful AI tools & Plugins",
-        "Preparing a Professional report in Google Docs from scratch",        
-        "Creating & using Text presets",
-        "Creating Automatic Table of contents",
-        "Creating page numbers",
-        "Working with images",
-        "Creating refences & bibliography",
-        "Practical Comparison between Google Docs & MS Word.",
-        "Using Google Drive to backup/store your important files.",
-        "How to use templates. - Create resumes, CV, etc.",        
-        "Using offline mode",
-        "Sharing Google doc files",
-        "QUESTION & ANSWER sessions"
-      ]
-    },
-    {
-      "CourseId": 3,
-      "Title": "GMAIL (Basic to Pro)",
-      "Description": "Master GMail for maximum productivity using emails.",
-      "Price": "USD 15",
-      "PriceUgx": "UGX 50,000",
-      "ClassTime": "3:00 PM - 4:00 PM EAT",
-      "Duration": "2 weeks",
-      "Image": "images/courseimages/gmail.png",
-      "Thumbnail": "images/gmail.png",
-      "Max": "100 Students",
-      "Preview": "",
-      "ClassDays": ["Tuesday","Thursday","Friday"],
-     "Next": "Every new Month",
-      "Topics": [
-        "How to create a gmail account",
-        "How to create professional email signatures using GMAIL.",
-        "Storing passwords in your gmail account",
-        "The Best Way to send large files via email (+other alternatives).",
-        "Some useful AI tools & Plugins",  
-        "Handling SPAM messages",
-        "Solving 'email is full' situation",
-        "Using email filters",      
-        "How to secure your emails from hackers - Best practices.",
-        "Change gmail themes"
-      ]
     }
-  
   
   ]
 }

@@ -42,56 +42,6 @@
             </button>
           </p>
         </div>
-        <form class="d-none">
-          <div class="input-group">
-            <h4 class="my-0 fw-bold mx-auto selectedcourse text-center">
-              Sign up Free to join
-            </h4>
-          </div>
-          <div class="input-group">
-            <input type="text" placeholder="Your Name" required name="name" />
-            <div
-              *ngIf="name.invalid && (name.dirty || name.touched)"
-              class="text-danger mx-auto">
-              Name is required.
-            </div>
-          </div>
-          <div class="input-group">
-            <input type="text" name="country" placeholder="Country" required />
-            <div
-              *ngIf="country.invalid && (country.dirty || country.touched)"
-              class="text-danger mx-auto">
-              Country is required.
-            </div>
-          </div>
-          <div class="input-group">
-            <input
-              type="text"
-              placeholder="Phone/ Whatsapp No."
-              required
-              name="phone" />
-            <div
-              *ngIf="phone.invalid && (phone.dirty || phone.touched)"
-              class="text-danger mx-auto">
-              Phone is required.
-            </div>
-          </div>
-          <div class="input-group">
-            <input type="email" name="email" placeholder="Email" required />
-            <div
-              *ngIf="email.invalid && (email.dirty || email.touched)"
-              class="text-danger mx-auto">
-              Enter a valid email.
-            </div>
-          </div>
-          <div class="input-group text-center"></div>
-
-          <p class="text-center">
-            <button type="submit" class="btn btn-danger px-5">
-              Submit Application
-            </button>
-          </p>
-        </form>
       </div>
     </div>
     <div class="col-md-1"></div>

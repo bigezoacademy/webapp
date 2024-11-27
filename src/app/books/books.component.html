@@ -1,0 +1,11 @@
+<h1 class="display-1 text-dark">TABLE OF BOOKS</h1>
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Name</th>
+  </tr>
+  <tr *ngFor="let book of bookslist">
+    <td>{{ book.author }}</td>
+    <td>{{ book.name }}</td>
+  </tr>
+</table>

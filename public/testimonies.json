@@ -50,6 +50,26 @@
       "Location": "Ggulu",
       "Year": "2024"
 
+    },
+    {
+      "Id": 6,
+      "Name": "Shanitah N. Mukisa",
+      "Image": "images/students/shanitah.jpg",
+      "Description": "For the longest time, I had been designing graphics but what I lacked was a professional touch to my work. When I joined Bigezo class designs, I realized I hadn’t started designing! I learnt so much more, aspects that transformed my whole design sphere.",
+      "Profession": "Journalist and Communications Specialist",
+      "Location": "Kampala",
+      "Year": "2024"
+
+    },
+    {
+      "Id": 7,
+      "Name": "Jucent Kisitu",
+      "Image": "images/students/jucent.jpg",
+      "Description": "I thoroughly enjoyed the graphic design class! The instructor's guidance and expertise were invaluable, providing a comprehensive knowledge of the fundamentals of design and graphic creation.The instructor's feedback was constructive and supportive, helping me refine my designs. I highly recommend this class to anyone looking to develop their graphic design skills.",
+      "Profession": "Journalist and Communications Specialist",
+      "Location": "Joy for humanity Uganda",
+      "Year": "2024"
+
     }
    
   

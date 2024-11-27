@@ -51,3 +51,11 @@ body {
 .image-wrapper img {
   max-width: 200px !important;
 }
+.bannerheader {
+  height: 200px !important;
+}
+
+.location {
+  color: #004c98;
+  font-weight: light;
+}

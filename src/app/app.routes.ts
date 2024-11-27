@@ -14,6 +14,7 @@ import { ImageTextEditorComponent } from '../pages/image-text-editor/image-text-
 import { FigmaEditor } from '../pages/figma-editor/figma-editor.component';
 import { DrillsComponent } from '../pages/drills/drills.component';
 import { TestimoniesComponent } from '../pages/testimonies/testimonies.component';
+import { BooksComponent } from './books/books.component';
 
 
 export const routes: Routes = [
@@ -35,6 +36,7 @@ export const routes: Routes = [
         path:'login',
         component:LoginComponent
     },
+    {path:'books',component:BooksComponent},
     {
         path:'signup',
         component:SignupComponent

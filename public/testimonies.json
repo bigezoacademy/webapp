@@ -81,6 +81,27 @@
       "Year": "2024"
 
     }
+    ,
+    {
+      "Id": 9,
+      "Name": "Michelle Ritah O. ",
+      "Image": "images/students/michelle.jpg",
+      "Description": "The Graphic Design course was unlike any other. I learned so much in such a short while. The lessons were very detailed, and yet easy to understand. Tr Alfred was patient and calm, explaining theories and concepts in a manner that was easy to grasp. Who knew that an Administration guru would also dabble in and become a proficient graphic designer?! 😂😂😂😂 I’d definitely encourage any and everyone to take this course. It’ll be worth it.",
+      "Profession": "PA- Motor Vehicle Registration Project/ MoWT",
+      "Location": "URA- Nakawa",
+      "Year": "2024"
+
+    },
+    {
+      "Id": 10,
+      "Name": "Godfrey Kakubi. ",
+      "Image": "images/students/godfrey.jpg",
+      "Description": "Tr. Alfred is an exceptional educator and an expert in his field. His teaching style is engaging, informative, and tailored to meet the needs of his students. He possesses a unique ability to break down complex concepts into easily digestible bits, making graphic design accessible to learners of all skill levels. Design fundamentals'   is a testament to Mr. Alfred's dedication to sharing his knowledge and expertise. The book is meticulously organized, filled with insightful explanations, and complemented by visuals that illustrate key concepts.",
+      "Profession": "Physiotherapy",
+      "Location": "UIAHMS Mulago",
+      "Year": "2024"
+
+    }
    
    
   

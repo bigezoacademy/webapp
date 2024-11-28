@@ -94,14 +94,34 @@
     },
     {
       "Id": 10,
-      "Name": "Godfrey Kakubi. ",
+      "Name": "Godfrey Kakubi ",
       "Image": "images/students/godfrey.jpg",
       "Description": "Tr. Alfred is an exceptional educator and an expert in his field. His teaching style is engaging, informative, and tailored to meet the needs of his students. He possesses a unique ability to break down complex concepts into easily digestible bits, making graphic design accessible to learners of all skill levels. Design fundamentals'   is a testament to Mr. Alfred's dedication to sharing his knowledge and expertise. The book is meticulously organized, filled with insightful explanations, and complemented by visuals that illustrate key concepts.",
       "Profession": "Physiotherapy",
       "Location": "UIAHMS Mulago",
       "Year": "2024"
 
-    }
+    },
+        {
+      "Id": 11,
+      "Name": "Brian Epo ",
+      "Image": "images/students/brian.jpg",
+      "Description": "I recently completed a graphics design training.This training was conducted by Mr. Alfred Ochola, and men! I was impressed. As a person, I was hesitant, but the training truly met my expectations. This training added to my skills and helped me design and improve my business logo design and other concepts.",
+      "Profession": "Technical Electrician",
+      "Location": "Kampala",
+      "Year": "2024"
+
+    },
+    {
+  "Id": 12,
+  "Name": "Mark Okiring",
+  "Image": "images/students/mark.jpg",
+  "Description": "The training was very enriching and introduced me to the fundamental principles of design. I had the opportunity to work with tools such as Figma, which I previously thought were difficult to grasp. The training enabled me to create designs efficiently—a truly delightful experience! About two weeks into the training, I delivered some 'simple' graphics for a project at work, and my bosses were impressed.",
+  "Profession": "Web Developer",
+  "Location": "Kampala",
+  "Year": "2024"
+
+}
    
    
   

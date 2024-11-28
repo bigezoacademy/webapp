@@ -12,8 +12,8 @@ export class SupabaseService {
   constructor() {
     // Initialize Supabase client
     this.supabase = createClient(
-      'https://csyzrvomlgfkaokhopzd.supabase.co',  // Replace with your Supabase URL
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzeXpydm9tbGdma2Fva2hvcHpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjcyODA1NjAsImV4cCI6MjA0Mjg1NjU2MH0.QEaLVvuBfYIXR46P8ivevCkYCQefxFs1phjuMJQkC6o'                   // Replace with your public anon key
+      'https://dbqzjclxrcuawfvnzlod.supabase.co',  // Replace with your Supabase URL
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRicXpqY2x4cmN1YXdmdm56bG9kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjczMDkyMzUsImV4cCI6MjA0Mjg4NTIzNX0.BOYOPU0qwB0A_oCo6I8WLK-ONt7v_OxXL6OzyKvTZJs'                   // Replace with your public anon key
     );
   }
 

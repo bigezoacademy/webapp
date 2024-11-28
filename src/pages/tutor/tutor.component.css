@@ -43,3 +43,8 @@
 p span {
   font-size: 50px;
 }
+.myname {
+  font-size: 18px !important;
+  background-color: #ff8989;
+  padding: 3px 10px;
+}

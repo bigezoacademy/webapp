@@ -80,3 +80,6 @@ body {
   background-color: #aeaeae;
   color: #000000;
 }
+.text-primary {
+  color: #0190b0 !important;
+}

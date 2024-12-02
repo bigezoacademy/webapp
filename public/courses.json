@@ -30,6 +30,35 @@
         "Designing with AI",
         "Final design project(s)"
       ]
+    },
+    {
+      "CourseId": 2,
+      "Title": "2D & 3D Animation  (Basic to Pro)",
+      "Description": "Learn the fundamentals of 2D & 3D Animation using Modern AI-Powered Tools. Create an animation from A to Z",
+      "Price": "USD 145",
+      "PriceUgx": "UGX 550,000",
+      "ClassTime": "1 Hr/ classDay",
+      "Duration": "4 weeks",
+      "Image": "images/courseimages/animation.png",
+      "Thumbnail": "images/graphic.png",
+      "Max": "50 Students/ Month",
+      "Preview": "",
+     "ClassDays": ["Mon,Tue,Thur,Fri"],
+      "Next": "Every new Month",
+      "Topics": [
+        "Leveraging AI, Free Video Editing Tools",
+"Animating Text and Photos",
+"Master the Art of AI Prompting",
+"Create Viral Social Media Videos",
+"Introduction to AI-Driven 3D Animation",
+"Remove Backgrounds from videos",
+"Mastering Keyframes for Smooth Animations",
+"Add Music and Sound Effects Like a pro",
+"Create Jaw-Dropping Visual Effects",
+"Character rigging and video rendering",
+"Your 2D Final Project",
+"Your 3D final project"
+      ]
     }
   
   ]

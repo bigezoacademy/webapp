@@ -59,3 +59,24 @@ body {
   color: #004c98;
   font-weight: light;
 }
+.tutorname {
+  color: #34ae21;
+  padding: 5px;
+  border-bottom: 1px solid #34ae21;
+  font-size: 28px;
+}
+.btn-kids {
+  background-color: #ffc675;
+  color: #000000;
+  font-weight: 600;
+}
+.btn-blue {
+  background-color: #75ffda;
+  color: #000000;
+  font-weight: 600;
+}
+.btn-blue:hover,
+.btn-kids:hover {
+  background-color: #aeaeae;
+  color: #000000;
+}

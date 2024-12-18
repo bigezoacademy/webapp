@@ -12,13 +12,13 @@
       "Thumbnail": "images/graphic.png",
       "Max": "50 Students/ Month",
       "Preview": "",
-     "ClassDays": ["Tue, Thur, Fri"],
-      "Next": "16-Dec-2024",
+      "ClassDays": ["Tue, Thur, Fri"],
+      "Next": "13-Jan-2025",
       "Topics": [
         "Introduction to Graphic Design Principles",
-       "Using Online graphic design tools (Canva & Figma)",       
-       "Using Text in Canva and Figma",       
-       "Using Images in Canva and Figma",
+        "Using Online graphic design tools (Canva & Figma)",
+        "Using Text in Canva and Figma",
+        "Using Images in Canva and Figma",
         "Photo editing and manipulation",
         "Techniques of Changing photo backgrounds",
         "Creating fliers (Marketing Campaigns/ Advertisement)",
@@ -43,23 +43,22 @@
       "Thumbnail": "images/graphic.png",
       "Max": "50 Students/ Month",
       "Preview": "",
-     "ClassDays": ["Mon,Tue,Thur,Fri"],
-      "Next": "16-Dec-2024",
+      "ClassDays": ["Mon,Tue,Thur,Fri"],
+      "Next": "13-Jan-2025",
       "Topics": [
         "Leveraging AI, Free Video Editing Tools",
-"Animating Text and Photos",
-"Master the Art of AI Prompting",
-"Create Viral Social Media Videos",
-"Introduction to AI-Driven 3D Animation",
-"Remove Backgrounds from videos",
-"Mastering Keyframes for Smooth Animations",
-"Add Music and Sound Effects Like a pro",
-"Create Jaw-Dropping Visual Effects",
-"Character rigging and video rendering",
-"Your 2D Final Project",
-"Your 3D final project"
+        "Animating Text and Photos",
+        "Master the Art of AI Prompting",
+        "Create Viral Social Media Videos",
+        "Introduction to AI-Driven 3D Animation",
+        "Remove Backgrounds from videos",
+        "Mastering Keyframes for Smooth Animations",
+        "Add Music and Sound Effects Like a pro",
+        "Create Jaw-Dropping Visual Effects",
+        "Character rigging and video rendering",
+        "Your 2D Final Project",
+        "Your 3D final project"
       ]
     }
-  
   ]
 }

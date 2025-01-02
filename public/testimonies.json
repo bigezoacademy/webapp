@@ -5,10 +5,9 @@
       "Name": "Dr. Bruno K.",
       "Image": "images/students/bruno.jpg",
       "Description": "It is a great feeling when I can imagine a design and at the same time able to bring it to a reality!. I liked the fact that Tutor Alfred taught us from first principles and in a 'tell, show, do, apply' manner.",
-      "Profession": "Professional Dentist",      
+      "Profession": "Professional Dentist",
       "Location": "Nakasero Hospital",
       "Year": "2023"
-
     },
     {
       "Id": 2,
@@ -18,7 +17,6 @@
       "Profession": "Student",
       "Location": "Jinja",
       "Year": "2024"
-
     },
     {
       "Id": 3,
@@ -28,9 +26,8 @@
       "Profession": "CEO - Routine Dental",
       "Location": "Kampala",
       "Year": "2023"
-
     },
-   
+
     {
       "Id": 4,
       "Name": "Rosanne",
@@ -39,7 +36,6 @@
       "Profession": "Student",
       "Location": "Kampala",
       "Year": "2024"
-
     },
     {
       "Id": 5,
@@ -47,9 +43,8 @@
       "Image": "images/students/noel.jpg",
       "Description": "The graphics design course is one of my answered prayers in 2024 , for long I have been struggling to create flyers and edit photos using my phone apps that turns to be so hectic and poor quality. The course has been so smooth because teacher Alfred delivered the content in the  simplest way possible to understand and grasp.",
       "Profession": "Agricultural Scientist",
-      "Location": "Ggulu",
+      "Location": "Gulu",
       "Year": "2024"
-
     },
     {
       "Id": 6,
@@ -59,7 +54,6 @@
       "Profession": "Journalist and Communications Specialist",
       "Location": "Kampala",
       "Year": "2024"
-
     },
     {
       "Id": 7,
@@ -69,7 +63,6 @@
       "Profession": "Journalist and Communications Specialist",
       "Location": "Joy for humanity Uganda",
       "Year": "2024"
-
     },
     {
       "Id": 8,
@@ -79,9 +72,7 @@
       "Profession": "Student (Bachelor of Architecture)",
       "Location": "KIU Western Campus (Ishaka)",
       "Year": "2024"
-
-    }
-    ,
+    },
     {
       "Id": 9,
       "Name": "Michelle Ritah O. ",
@@ -90,7 +81,6 @@
       "Profession": "PA- Motor Vehicle Registration Project/ MoWT",
       "Location": "URA- Nakawa",
       "Year": "2024"
-
     },
     {
       "Id": 10,
@@ -100,9 +90,8 @@
       "Profession": "Physiotherapy",
       "Location": "UIAHMS Mulago",
       "Year": "2024"
-
     },
-        {
+    {
       "Id": 11,
       "Name": "Brian Epo ",
       "Image": "images/students/brian.jpg",
@@ -110,21 +99,24 @@
       "Profession": "Technical Electrician",
       "Location": "Kampala",
       "Year": "2024"
-
     },
     {
-  "Id": 12,
-  "Name": "Mark Okiring",
-  "Image": "images/students/mark.jpg",
-  "Description": "The training was very enriching and introduced me to the fundamental principles of design. I had the opportunity to work with tools such as Figma, which I previously thought were difficult to grasp. The training enabled me to create designs efficiently—a truly delightful experience! About two weeks into the training, I delivered some 'simple' graphics for a project at work, and my bosses were impressed.",
-  "Profession": "Web Developer",
-  "Location": "Kampala",
-  "Year": "2024"
-
-}
-   
-   
-  
-  
+      "Id": 12,
+      "Name": "Mark Okiring",
+      "Image": "images/students/mark.jpg",
+      "Description": "The training was very enriching and introduced me to the fundamental principles of design. I had the opportunity to work with tools such as Figma, which I previously thought were difficult to grasp. The training enabled me to create designs efficiently—a truly delightful experience! About two weeks into the training, I delivered some 'simple' graphics for a project at work, and my bosses were impressed.",
+      "Profession": "Web Developer",
+      "Location": "Kampala",
+      "Year": "2024"
+    },
+    {
+      "Id": 13,
+      "Name": "Patrick Ikara",
+      "Image": "images/students/patrick.jpg",
+      "Description": "I bless the Lord for such a great opportunity to Learn Graphic designing skills using the latest technologies and platforms from the most dedicated teachers that were always available to support and guide 24/7. My designing skills are better today course I got a chance to interact with professionals in the graphics designing field who are already achieving tremendous success in it and who left me inspired and fired up to excel in the same.",
+      "Profession": "Executive Director",
+      "Location": "Epic Designs ",
+      "Year": "2024"
+    }
   ]
 }
